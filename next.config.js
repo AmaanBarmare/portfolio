@@ -9,7 +9,7 @@ const nextConfig = {
     formats: ['image/webp', 'image/avif'],
   },
   experimental: {
-    optimizeCss: true,
+    optimizeCss: false,
   },
 };
 

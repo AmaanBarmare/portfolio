@@ -155,7 +155,7 @@ const config: Config = {
   plugins: [
     require('tailwindcss-animate'),
     // Custom plugin for mobile-first utilities
-    function({ addUtilities, theme, addBase }) {
+    function({ addUtilities, theme, addBase }: any) {
       addBase({
         // Optimize for mobile performance
         'html': {

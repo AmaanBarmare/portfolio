@@ -10,11 +10,12 @@ import { FadeInUp } from '@/components/animations/fade-in-up';
 import projectsData from '@/data/projects.json';
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const project = projectsData.find(proj => proj.slug === params.slug);
+  const { slug } = await params;
+  const project = projectsData.find(proj => proj.slug === slug);
   
   if (!project) {
     return {
@@ -34,8 +35,9 @@ export function generateStaticParams() {
   }));
 }
 
-export default function ProjectDetailPage({ params }: Props) {
-  const project = projectsData.find(proj => proj.slug === params.slug);
+export default async function ProjectDetailPage({ params }: Props) {
+  const { slug } = await params;
+  const project = projectsData.find(proj => proj.slug === slug);
 
   if (!project) {
     notFound();

@@ -12,11 +12,12 @@ import experiencesData from '@/data/experiences.json';
 import Image from "next/image";
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const experience = experiencesData.find(exp => exp.id === params.slug);
+  const { slug } = await params;
+  const experience = experiencesData.find(exp => exp.id === slug);
   
   if (!experience) {
     return {
@@ -36,8 +37,9 @@ export function generateStaticParams() {
   }));
 }
 
-export default function ExperienceDetailPage({ params }: Props) {
-  const experience = experiencesData.find(exp => exp.id === params.slug);
+export default async function ExperienceDetailPage({ params }: Props) {
+  const { slug } = await params;
+  const experience = experiencesData.find(exp => exp.id === slug);
 
   if (!experience) {
     notFound();
