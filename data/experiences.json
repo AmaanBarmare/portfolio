@@ -1,0 +1,163 @@
+[
+  {
+    "id": "mu-sigma-intern",
+    "title": "Software Engineering Intern",
+    "company": "Mu Sigma",
+    "location": "Austin, TX",
+    "timeframe": "Jul 2025 – Present",
+    "status": "current",
+    "logo": "/musigmalogo.jpeg",
+    "type": "internship",
+    "stack": ["Python", "SQL", "AWS", "Docker", "Kubernetes"],
+    "shortDescription": "Building scalable data engineering solutions and ML pipelines for enterprise clients.",
+    "quickRead": [
+      "Developing automated data processing pipelines serving 50M+ records daily",
+      "Building ML model deployment infrastructure with 99.9% uptime",
+      "Collaborating with cross-functional teams on client solutions"
+    ],
+    "fullStory": {
+      "problem": "Enterprise clients needed scalable, reliable data processing solutions to handle massive datasets and deploy machine learning models efficiently in production environments.",
+      "actions": [
+        "Architected and implemented automated ETL pipelines using Python and Apache Airflow, processing over 50 million records daily with error handling and monitoring",
+        "Built containerized ML model deployment infrastructure using Docker and Kubernetes, achieving 99.9% uptime and enabling rapid model updates",
+        "Developed real-time data validation systems using SQL and Python, reducing data quality issues by 85%",
+        "Collaborated with data scientists and product teams to optimize model performance and implement A/B testing frameworks"
+      ],
+      "impact": [
+        "Reduced data processing time by 60% through pipeline optimization",
+        "Enabled deployment of 15+ ML models with automated rollback capabilities",
+        "Improved client data quality scores from 70% to 95%",
+        "Contributed to $2M+ in client contract renewals through reliable service delivery"
+      ],
+      "learnings": "Gained deep expertise in enterprise-scale data engineering, learned the importance of monitoring and observability in production systems, and developed skills in stakeholder communication and technical project management."
+    }
+  },
+  {
+    "id": "augle-ai-2024",
+    "title": "Software Engineering Intern",
+    "company": "Augle AI",
+    "location": "Remote",
+    "timeframe": "Jun 2024 – Aug 2024",
+    "logo": "/augle_ai_logo.jpeg",
+    "type": "internship",
+    "stack": ["React", "Node.js", "Python", "TensorFlow", "PostgreSQL", "Docker"],
+    "shortDescription": "Developed AI-powered web applications and contributed to machine learning model improvements.",
+    "quickRead": [
+      "Built full-stack web applications with React and Node.js serving 10K+ users",
+      "Improved ML model accuracy by 15% through data preprocessing optimization",
+      "Implemented real-time data visualization dashboards for client analytics"
+    ],
+    "fullStory": {
+      "problem": "The company needed to scale their AI-powered analytics platform to handle growing user demand while improving model performance and user experience.",
+      "actions": [
+        "Developed responsive web applications using React and Node.js, implementing user authentication, data visualization, and real-time updates",
+        "Optimized machine learning data preprocessing pipelines using Python and pandas, improving data quality and model training efficiency",
+        "Built RESTful APIs with Express.js and PostgreSQL, handling complex queries and ensuring data security",
+        "Created interactive dashboards using D3.js and Chart.js for client analytics and model performance monitoring"
+      ],
+      "impact": [
+        "Deployed applications serving 10,000+ active users with 99% uptime",
+        "Improved ML model accuracy by 15% through better data preprocessing",
+        "Reduced API response time by 40% through query optimization",
+        "Enhanced user engagement by 25% with improved dashboard UX"
+      ],
+      "learnings": "Learned to work with production-scale applications, gained experience in AI/ML integration with web applications, and developed skills in performance optimization and user experience design."
+    }
+  },
+  {
+    "id": "augle-ai-2023",
+    "title": "Software Engineering Intern",
+    "company": "Augle AI",
+    "location": "Remote",
+    "timeframe": "May 2023 – Aug 2023",
+    "logo": "/augle_ai_logo.jpeg",
+    "type": "internship",
+    "stack": ["JavaScript", "Python", "Flask", "MongoDB", "AWS", "Git"],
+    "shortDescription": "First internship focused on full-stack development and database optimization for AI applications.",
+    "quickRead": [
+      "Developed full-stack applications using JavaScript, Python, and Flask",
+      "Optimized MongoDB queries reducing response times by 30%",
+      "Implemented user authentication and data management systems"
+    ],
+    "fullStory": {
+      "problem": "As a growing startup, Augle AI needed to build robust web applications quickly while establishing best practices for data management and user authentication.",
+      "actions": [
+        "Built full-stack web applications using Flask for backend APIs and vanilla JavaScript for frontend interfaces",
+        "Designed and implemented MongoDB database schemas for user data and application analytics",
+        "Created secure user authentication systems with JWT tokens and password encryption",
+        "Developed automated testing suites and established CI/CD pipelines using Git and AWS"
+      ],
+      "impact": [
+        "Delivered 5 production-ready web applications used by early customers",
+        "Improved database query performance by 30% through indexing and optimization",
+        "Established security practices that prevented data breaches",
+        "Reduced development cycle time by 25% with automated testing"
+      ],
+      "learnings": "Gained foundational experience in full-stack development, learned the importance of security in web applications, and developed understanding of startup engineering practices and rapid prototyping."
+    }
+  },
+  {
+    "id": "psu-math-grader",
+    "title": "Mathematics Grader",
+    "company": "Penn State University",
+    "location": "University Park, PA",
+    "timeframe": "2024",
+    "logo": "/pennstatelogo.jpeg",
+    "type": "academic",
+    "stack": ["Mathematical Analysis", "Communication", "Time Management"],
+    "shortDescription": "Graded assignments and provided feedback for undergraduate mathematics courses.",
+    "quickRead": [
+      "Graded 200+ assignments weekly with detailed feedback",
+      "Maintained 98% accuracy in grading consistency reviews",
+      "Helped students improve problem-solving through targeted feedback"
+    ],
+    "fullStory": {
+      "problem": "The mathematics department needed reliable graders who could provide consistent, helpful feedback to help students improve their problem-solving skills and understanding of complex concepts.",
+      "actions": [
+        "Graded over 200 assignments weekly for calculus and linear algebra courses, ensuring consistent application of rubrics",
+        "Provided detailed written feedback highlighting common mistakes and suggesting improvement strategies",
+        "Collaborated with professors to align grading standards and identify students needing additional support",
+        "Developed efficient grading workflows to meet tight deadlines while maintaining quality"
+      ],
+      "impact": [
+        "Maintained 98% accuracy rate in grading consistency reviews",
+        "Helped improve student performance through targeted feedback",
+        "Reduced professor grading workload by 60 hours per semester",
+        "Identified and reported common conceptual gaps to improve course instruction"
+      ],
+      "learnings": "Developed strong attention to detail, improved communication skills for providing constructive feedback, and learned to manage time effectively under consistent deadlines."
+    }
+  },
+  {
+    "id": "psu-learning-assistant",
+    "title": "Learning Assistant",
+    "company": "Penn State University",
+    "location": "University Park, PA",
+    "timeframe": "2023",
+    "logo": "/pennstatelogo.jpeg",
+    "type": "academic",
+    "stack": ["Teaching", "Communication", "Problem-Solving", "Leadership"],
+    "shortDescription": "Supported introductory computer science courses through tutoring and lab assistance.",
+    "quickRead": [
+      "Assisted 150+ students in introductory programming courses",
+      "Led weekly study sessions and programming workshops",
+      "Achieved 95% student satisfaction rating in course evaluations"
+    ],
+    "fullStory": {
+      "problem": "Many students in introductory computer science courses struggled with fundamental programming concepts and needed additional support beyond regular lecture hours.",
+      "actions": [
+        "Provided one-on-one tutoring and group assistance in programming labs for Java and Python courses",
+        "Led weekly study sessions covering difficult concepts like data structures, algorithms, and object-oriented programming",
+        "Created supplementary learning materials including code examples and practice problems",
+        "Collaborated with professors to identify students at risk and provide targeted intervention"
+      ],
+      "impact": [
+        "Assisted over 150 students throughout the academic year",
+        "Achieved 95% student satisfaction rating in course evaluations",
+        "Helped reduce course dropout rate by 20% through early intervention",
+        "Improved average class performance on programming assignments by 15%"
+      ],
+      "learnings": "Developed teaching and mentoring skills, learned to explain complex technical concepts in accessible ways, and gained experience in educational leadership and student support."
+    }
+  }
+]

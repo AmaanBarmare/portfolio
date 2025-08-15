@@ -1,0 +1,25 @@
+{
+  "name": "Amaan Barmare",
+  "title": "Software Engineer — Full-Stack & AI",
+  "email": "amaan.barmare03@gmail.com",
+  "phone": "609-582-5588",
+  "github": "https://github.com/AmaanBarmare",
+  "linkedin": "https://linkedin.com/in/amaan-barmare-3bw",
+  "location": "Austin, Texas",
+  "bio": "Recent Computer Science and Economics graduate from Penn State with a strong foundation in full-stack development, data engineering, and AI. Experienced in building scalable, intelligent applications through internships, projects, and entrepreneurial ventures.",
+  "tagline": "I build intelligent, scalable apps across web, data, and ML.",
+  "education": {
+    "school": "Penn State University",
+    "degree": "Bachelor of Science",
+    "major": "Computer Science",
+    "minor": "Economics",
+    "graduationDate": "May 2025",
+    "location": "Austin, Texas",
+    "achievements": [
+    "Dean's List Spring 2024",
+    "Google Developer Student Club Member",
+    "Nittany Data Labs Member",
+    "Nittany AI Alliance Member"
+  ]
+  }
+}

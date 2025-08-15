@@ -1,0 +1,62 @@
+{
+  "languages": [
+    "TypeScript",
+    "JavaScript",
+    "Python",
+    "Java",
+    "C",
+    "C++",
+    "C#",
+    "SQL",
+    "HTML",
+    "CSS"
+  ],
+  "frameworks": [
+    "React",
+    "Next.js",
+    "Node.js",
+    "Express.js",
+    "Flask",
+    "Unity",
+    "TensorFlow",
+    "PyTorch"
+  ],
+  "libraries": [
+    "Tailwind CSS",
+    "Framer Motion",
+    "Three.js",
+    "D3.js",
+    "Chart.js",
+    "Pandas",
+    "NumPy",
+    "OpenCV"
+  ],
+  "tools": [
+    "Git",
+    "Docker",
+    "Kubernetes",
+    "Webpack",
+    "Vite",
+    "ESLint",
+    "Prettier",
+    "Jest",
+    "Cypress"
+  ],
+  "cloud": [
+    "AWS",
+    "Google Cloud",
+    "Azure",
+    "Vercel",
+    "Netlify",
+    "MongoDB Atlas",
+    "Supabase",
+    "Firebase"
+  ],
+  "databases": [
+    "MongoDB",
+    "PostgreSQL",
+    "MySQL",
+    "Redis",
+    "SQLite"
+  ]
+}

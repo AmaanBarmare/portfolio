@@ -1,0 +1,230 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 200 100% 28%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 200 100% 28%;
+    --radius: 0.5rem;
+    
+    /* Custom colors */
+    --teal: 180 100% 25%;
+    --gold: 45 100% 50%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 200 100% 70%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 200 100% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* Optimize font rendering for performance */
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Improve scrolling performance on mobile */
+    -webkit-overflow-scrolling: touch;
+    /* Prevent zoom on input focus for iOS */
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  /* Smooth scrolling with reduced motion support */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Focus styles for accessibility */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2;
+  }
+  
+  /* Skip to content link */
+  .skip-nav {
+    @apply absolute -top-10 left-4 z-50 bg-primary px-4 py-2 text-primary-foreground transition-all duration-300 focus:top-4;
+  }
+  
+  /* Touch optimizations for mobile */
+  button, [role="button"], input[type="submit"], input[type="button"] {
+    /* Prevent highlight on tap */
+    -webkit-tap-highlight-color: transparent;
+    /* Optimize touch events */
+    touch-action: manipulation;
+  }
+  
+  /* Optimize images for mobile */
+  img {
+    /* Prevent image dragging on mobile */
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    /* Prevent long-press context menu */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* Improve loading performance */
+    content-visibility: auto;
+  }
+  
+  /* Reduce motion for users who prefer it */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+    
+    html {
+      scroll-behavior: auto !important;
+    }
+  }
+  
+  /* High contrast mode support */
+  @media (prefers-contrast: high) {
+    .gradient-text {
+      @apply text-foreground;
+      background: none !important;
+      -webkit-background-clip: unset !important;
+      -webkit-text-fill-color: unset !important;
+    }
+  }
+}
+
+/* Custom utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .text-pretty {
+    text-wrap: pretty;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-teal-600 bg-clip-text text-transparent;
+  }
+  
+  .glass {
+    @apply bg-white/80 backdrop-blur-md dark:bg-black/80;
+  }
+  
+  .border-gradient {
+    @apply border border-transparent bg-gradient-to-r from-primary/20 to-teal-600/20 bg-clip-padding;
+  }
+  
+  /* Mobile-first spacing utilities */
+  .section-padding {
+    @apply px-4 py-12 sm:px-6 md:py-16 lg:px-8 lg:py-20;
+  }
+  
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* Performance optimizations */
+  .will-change-transform {
+    will-change: transform;
+  }
+  
+  .will-change-scroll {
+    will-change: scroll-position;
+  }
+  
+  /* Content visibility for performance */
+  .content-auto {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 1000px;
+  }
+}
+
+/* Component-specific optimizations */
+.card-hover {
+  @apply transition-all duration-300 ease-out;
+  transform: translateZ(0); /* Enable hardware acceleration */
+}
+
+.card-hover:hover {
+  @apply shadow-lg;
+  transform: translateY(-2px) translateZ(0);
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 640px) {
+  /* Optimize animations for mobile performance */
+  .card-hover {
+    transition: box-shadow 0.2s ease-out;
+    transform: none;
+  }
+  
+  .card-hover:hover {
+    transform: none;
+  }
+  
+  /* Reduce backdrop blur on mobile for performance */
+  .glass {
+    @apply bg-white/95 dark:bg-black/95;
+    backdrop-filter: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}

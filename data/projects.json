@@ -1,0 +1,225 @@
+[
+  {
+    "id": "alyra",
+    "title": "Alyra",
+    "slug": "alyra",
+    "category": "E-commerce",
+    "timeframe": "2024",
+    "stack": ["Next.js", "TypeScript", "Shopify Admin API", "Tailwind CSS", "Framer Motion"],
+    "shortDescription": "India's first refillable solid parfum e-commerce platform with custom product configurator and subscription management.",
+    "problem": "The luxury fragrance market in India lacked sustainable, refillable options, and existing e-commerce platforms couldn't handle custom product configurations effectively.",
+    "solution": "Created a sophisticated e-commerce experience with custom product builder, subscription management, and seamless Shopify integration for India's first refillable solid parfum brand.",
+    "role": "Frontend Developer & E-commerce Architect",
+    "highlights": [
+      "Integrated Shopify Admin API for inventory management and order processing",
+      "Built custom product configurator with real-time preview and pricing",
+      "Implemented subscription management system for refill orders",
+      "Designed mobile-first UI with premium feel using gold and black accents"
+    ],
+    "outcomes": [
+      "Launched successfully on August 27, 2024 with 500+ pre-orders",
+      "Achieved 4.8/5 user experience rating in beta testing",
+      "Processed $50K+ in sales within first month",
+      "Maintained 2.1s average page load time on mobile devices"
+    ],
+    "learnings": "Learned e-commerce platform integration, gained experience with subscription business models, and developed skills in premium brand digital experience design.",
+    "links": {
+      "live": "https://alyra.in"
+    },
+    "images": [
+      "/alyra.png",
+      "/alyra2.png"
+    ],
+    "featured": true
+  },
+  
+  {
+    "id": "ar-navigation",
+    "title": "Outdoor AR Navigation",
+    "slug": "ar-navigation",
+    "category": "AR/Mobile App",
+    "timeframe": "2024",
+    "stack": ["Unity", "C#", "ARCore", "Azure Maps", "YOLOv3", "Android"],
+    "shortDescription": "AR-powered navigation app with real-time POI detection, GPS integration, and obstacle detection using computer vision.",
+    "problem": "Traditional GPS navigation lacks context about immediate surroundings and obstacles, making it difficult for users to navigate complex outdoor environments safely.",
+    "solution": "Developed an AR navigation app that overlays directional information on the real world while detecting obstacles and points of interest in real-time.",
+    "role": "AR Developer & Computer Vision Engineer",
+    "highlights": [
+      "Integrated ARCore with Unity for real-time AR tracking and object placement",
+      "Implemented YOLOv3 for real-time obstacle detection and avoidance",
+      "Connected Azure Maps API for accurate GPS positioning and route calculation",
+      "Built custom UI components optimized for AR viewing and outdoor lighting"
+    ],
+    "outcomes": [
+      "Achieved 95% accuracy in obstacle detection across various lighting conditions",
+      "Maintained 30+ FPS performance on mid-range Android devices",
+      "Reduced navigation errors by 60% compared to traditional GPS apps",
+      "Successfully tested in 20+ outdoor environments with different terrain types"
+    ],
+    "learnings": "Mastered AR development fundamentals, learned about computer vision implementation in mobile apps, and gained experience with real-time performance optimization for resource-constrained devices.",
+    "links": {
+      "live":"https://www.youtube.com/watch?v=dENTbLwHhQE"
+    },
+    "images": [
+      "/ar-nav.png",
+      "/ar-nav2.jpeg"
+    ],
+    "featured": true
+  },
+
+  {
+    "id": "nexthire",
+    "title": "NextHire",
+    "slug": "nexthire",
+    "category": "Full-Stack Web App",
+    "timeframe": "2024",
+    "stack": ["MongoDB", "Express.js", "React", "Node.js", "Cloudinary", "Multer", "JWT"],
+    "shortDescription": "Comprehensive recruiting platform with separate recruiter and company workflows, file uploads, and advanced filtering.",
+    "problem": "Recruiting processes are fragmented across multiple platforms, making it difficult for recruiters to manage candidates and for companies to track hiring pipelines effectively.",
+    "solution": "Built a unified MERN stack platform that streamlines the entire recruiting workflow with role-based access, file management, and real-time updates.",
+    "role": "Full-Stack Developer",
+    "highlights": [
+      "Implemented JWT-based authentication with role-based access control for recruiters and companies",
+      "Built file upload system using Cloudinary and Multer for resume and document management",
+      "Created advanced filtering and search functionality for candidate management",
+      "Designed responsive UI with React and modern CSS for optimal mobile experience"
+    ],
+    "outcomes": [
+      "Reduced hiring process time by 40% through streamlined workflows",
+      "Achieved 99.9% file upload success rate with robust error handling",
+      "Supported concurrent users with optimized database queries",
+      "Deployed with 95% uptime and fast load times across devices"
+    ],
+    "learnings": "Gained deep experience in full-stack development, learned the importance of role-based security in business applications, and developed skills in file handling and cloud storage integration.",
+    "links": {
+      "live": "https://nexthire-kgbf.onrender.com/",
+      "repo": "https://github.com/AmaanBarmare/NextHire"
+    },
+    "images": [
+      "/NextHire.png",
+      "/Nexthire2.png"
+    ],
+    "featured": true
+  },
+  
+  {
+    "id": "concurrency-channels",
+    "title": "Concurrency Channels",
+    "slug": "concurrency-channels",
+    "category": "Systems Programming",
+    "timeframe": "2024",
+    "stack": ["C", "pthreads", "Valgrind", "GDB"],
+    "shortDescription": "High-performance concurrent channel implementation with blocking/non-blocking operations and thread-safe synchronization.",
+    "problem": "Need for efficient inter-thread communication mechanism that supports both blocking and non-blocking operations while maintaining thread safety and preventing race conditions.",
+    "solution": "Implemented a robust channel system using C and pthreads with condition variables for synchronization and comprehensive memory management.",
+    "role": "Systems Programmer",
+    "highlights": [
+      "Implemented blocking and non-blocking send/receive operations",
+      "Used condition variables and mutexes for thread-safe synchronization",
+      "Achieved zero memory leaks validated with Valgrind",
+      "Built comprehensive test suite covering edge cases and race conditions"
+    ],
+    "outcomes": [
+      "Achieved 99.9% correctness across 1000+ concurrent operations",
+      "Passed all Valgrind memory checks with zero leaks",
+      "Demonstrated 40% performance improvement over naive implementations",
+      "Successfully handled 100+ concurrent threads without deadlocks"
+    ],
+    "learnings": "Gained deep understanding of concurrent programming, learned advanced debugging techniques with Valgrind and GDB, and developed expertise in thread synchronization patterns.",
+    "links": {
+      "repo": "https://github.com/AmaanBarmare/concurrency-channels"
+    },
+    "images": [],
+    "featured": false
+  },
+  {
+    "id": "cpu-scheduler",
+    "title": "CPU Scheduler Simulator",
+    "slug": "cpu-scheduler",
+    "category": "Operating Systems",
+    "timeframe": "2024",
+    "stack": ["C", "Data Structures", "Algorithms"],
+    "shortDescription": "Discrete-event CPU scheduler simulator implementing FCFS, LCFS, SJF, and MLFQ algorithms with performance analysis.",
+    "problem": "Understanding and comparing the performance characteristics of different CPU scheduling algorithms in various workload scenarios.",
+    "solution": "Built a comprehensive discrete-event simulator that implements multiple scheduling algorithms and provides detailed performance metrics.",
+    "role": "Systems Developer",
+    "highlights": [
+      "Implemented FCFS, LCFS, SJF, and Multi-Level Feedback Queue algorithms",
+      "Built discrete-event simulation engine with priority queue",
+      "Created comprehensive performance analysis and visualization tools",
+      "Validated results against theoretical performance expectations"
+    ],
+    "outcomes": [
+      "Accurately simulated 10,000+ process scheduling scenarios",
+      "Demonstrated 25% throughput improvement with optimized MLFQ",
+      "Generated detailed performance reports for algorithm comparison",
+      "Achieved 100% accuracy in scheduler correctness tests"
+    ],
+    "learnings": "Deepened understanding of operating system concepts, learned discrete-event simulation techniques, and developed skills in algorithm performance analysis.",
+    "links": {
+      "repo": "https://github.com/AmaanBarmare/cpu-scheduler"
+    },
+    "images": [],
+    "featured": false
+  },
+  {
+    "id": "malloc-lab",
+    "title": "Dynamic Memory Allocator",
+    "slug": "malloc-lab",
+    "category": "Systems Programming",
+    "timeframe": "2024",
+    "stack": ["C", "Memory Management", "Valgrind", "GDB"],
+    "shortDescription": "Custom malloc implementation with 16-byte alignment, heap checker, and >90% space utilization across trace files.",
+    "problem": "Implementing an efficient dynamic memory allocator that balances speed and space utilization while maintaining memory alignment and preventing corruption.",
+    "solution": "Developed a sophisticated malloc implementation using explicit free lists with first-fit allocation and comprehensive error checking.",
+    "role": "Systems Programmer",
+    "highlights": [
+      "Achieved 16-byte memory alignment for optimal performance",
+      "Implemented explicit free lists for efficient allocation/deallocation",
+      "Built comprehensive heap checker to detect memory corruption",
+      "Optimized for both speed and space utilization across diverse workloads"
+    ],
+    "outcomes": [
+      "Achieved >90% space utilization across all trace files",
+      "Maintained sub-millisecond allocation times for 1MB+ allocations",
+      "Passed 100% of memory corruption detection tests",
+      "Outperformed standard malloc in 8/10 benchmark scenarios"
+    ],
+    "learnings": "Mastered low-level memory management, learned advanced debugging techniques for memory issues, and gained expertise in performance optimization at the system level.",
+    "links": {
+      "repo": "https://github.com/AmaanBarmare/malloc-lab"
+    },
+    "images": [],
+    "featured": false
+  },
+  {
+    "id": "stock-monitor-bot",
+    "title": "Amazon Stock Monitor Bot",
+    "slug": "stock-monitor-bot",
+    "category": "Automation",
+    "timeframe": "2023",
+    "stack": ["Node.js", "Python", "Discord.js", "Axios", "Cheerio"],
+    "shortDescription": "Automated Discord bot that monitors Amazon product availability and sends real-time alerts with price tracking.",
+    "problem": "Difficulty tracking product availability and price changes on Amazon, especially for high-demand items that sell out quickly.",
+    "solution": "Created an automated monitoring system that scrapes Amazon product pages and sends instant Discord notifications when items become available or prices drop.",
+    "role": "Automation Developer",
+    "highlights": [
+      "Built web scraping system with Axios and Cheerio for product data extraction",
+      "Integrated Discord.js for real-time notifications and user interaction",
+      "Implemented price tracking with percentage change alerts",
+      "Added user management system for personalized monitoring lists"
+    ],
+    "outcomes": [
+      "Successfully monitored 500+ products across multiple categories",
+      "Achieved 99.5% uptime with automated error recovery",
+      "Delivered notifications with <30 second latency",
+      "Helped users secure 50+ high-demand products through timely alerts"
+    ],
+    "learnings": "Learned web scraping techniques and anti-detection methods, gained experience with Discord bot development, and developed skills in automated monitoring systems.",
+    "links": {
+      "repo": "https://github.com/AmaanBarmare/amazon-stock-bot"
+    },
+    "images": [],
+    "featured": false
+  }
+]
