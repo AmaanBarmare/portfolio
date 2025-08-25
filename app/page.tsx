@@ -165,37 +165,11 @@ export default function Home() {
                 </Link>
               </Button>
             </div>
-          </FadeInUp>
+                    </FadeInUp>
         </div>
       </section>
 
-      {/* Quick Overview Section */}
-      <section className="px-4 py-16 md:py-20 bg-muted/20">
-        <div className="container mx-auto max-w-4xl">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <FadeInUp delay={0.1}>
-              <div>
-                <h3 className="font-bold text-2xl mb-2 text-primary">7+</h3>
-                <p className="text-muted-foreground">Projects Completed</p>
-              </div>
-            </FadeInUp>
-            
-            <FadeInUp delay={0.2}>
-              <div>
-                <h3 className="font-bold text-2xl mb-2 text-primary">3</h3>
-                <p className="text-muted-foreground">Internships</p>
-              </div>
-            </FadeInUp>
-            
-            <FadeInUp delay={0.3}>
-              <div>
-                <h3 className="font-bold text-2xl mb-2 text-primary">2025</h3>
-                <p className="text-muted-foreground">Graduation Year</p>
-              </div>
-            </FadeInUp>
-          </div>
-        </div>
-      </section>
+
     </div>
   );
 }

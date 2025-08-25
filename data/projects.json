@@ -4,7 +4,7 @@
     "title": "Alyra",
     "slug": "alyra",
     "category": "E-commerce",
-    "timeframe": "2024",
+    "timeframe": "2025",
     "stack": ["Next.js", "TypeScript", "Shopify Admin API", "Tailwind CSS", "Framer Motion"],
     "shortDescription": "India's first refillable solid parfum e-commerce platform with custom product configurator and subscription management.",
     "problem": "The luxury fragrance market in India lacked sustainable, refillable options, and existing e-commerce platforms couldn't handle custom product configurations effectively.",

@@ -283,16 +283,10 @@ export default function ContactPage() {
             <FadeInUp delay={0.4}>
               <Card className="p-6 bg-gradient-to-br from-primary/5 to-teal-600/5 border-primary/20">
                 <h3 className="font-semibold mb-2 text-primary">Quick Response</h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <p className="text-sm text-muted-foreground">
                   Need something urgent? Feel free to call or text me directly. 
                   I'm usually available during business hours EST.
                 </p>
-                <Button asChild variant="outline" size="sm" className="w-full">
-                  <a href={`tel:${personalData.phone}`}>
-                    <Phone className="w-4 h-4 mr-2" />
-                    Call Now
-                  </a>
-                </Button>
               </Card>
             </FadeInUp>
           </div>
