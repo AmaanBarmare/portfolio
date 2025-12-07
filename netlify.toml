@@ -1,0 +1,8 @@
+[build]
+  # Use Jammy (Ubuntu 22.04) build image instead of deprecated Focal
+  image = "jammy"
+
+[build.environment]
+  # Node version (optional, but recommended)
+  NODE_VERSION = "20"
+
