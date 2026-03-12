@@ -14,8 +14,12 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="px-4 py-16 md:py-24 bg-gradient-to-b from-background to-muted/20">
-        <div className="container mx-auto max-w-4xl text-center">
+      <section className="px-4 py-16 md:py-24 relative overflow-hidden bg-background">
+        {/* Subtle technical grid pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+        <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-primary opacity-20 blur-[100px]"></div>
+        
+        <div className="container mx-auto max-w-4xl text-center relative z-10">
           <FadeInUp>
             <h1 className="text-[clamp(2rem,4.5vw,3.5rem)] font-bold leading-tight mb-6 text-balance">
               <span className="gradient-text">
@@ -91,7 +95,7 @@ export default function Home() {
                       <Badge variant="secondary" className="text-xs">
                         {project.category}
                       </Badge>
-                      <span className="text-xs text-muted-foreground">
+                      <span className="text-xs font-mono text-muted-foreground">
                         {project.timeframe}
                       </span>
                     </div>

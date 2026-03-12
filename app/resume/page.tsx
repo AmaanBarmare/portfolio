@@ -109,8 +109,8 @@ export default function ResumePage() {
             <div className="text-center pt-8 border-t">
               <h2 className="text-lg font-semibold mb-4">Interested in Working Together?</h2>
               <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                I'm always open to discussing new opportunities and exciting projects. 
-                Let's connect and explore how we can collaborate.
+                I&apos;m always open to discussing new opportunities and exciting projects. 
+                Let&apos;s connect and explore how we can collaborate.
               </p>
               <Button asChild size="lg" className="min-h-[48px] px-8">
                 <Link href="/contact">

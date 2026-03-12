@@ -75,7 +75,7 @@ export default function EducationPage() {
 
                 <div className="text-center lg:text-right">
                   <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-primary to-teal-600 text-white mb-3">
-                    <span className="text-2xl font-bold">2025</span>
+                    <span className="text-2xl font-bold font-mono">2025</span>
                   </div>
                   <p className="text-sm text-muted-foreground">Graduation Year</p>
                 </div>
@@ -202,7 +202,7 @@ export default function EducationPage() {
           <div className="text-center mt-16">
             <h2 className="text-xl font-semibold mb-4">Ready to Make an Impact</h2>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              With a strong academic foundation and hands-on experience, I'm excited to bring my 
+              With a strong academic foundation and hands-on experience, I&apos;m excited to bring my 
               skills to a dynamic team and contribute to innovative projects.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

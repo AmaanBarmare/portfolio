@@ -69,7 +69,7 @@ export default async function ProjectDetailPage({ params }: Props) {
                     {project.category && (
                       <Badge variant="secondary">{project.category}</Badge>
                     )}
-                    <div className="flex items-center gap-1 text-sm text-muted-foreground">
+                    <div className="flex items-center gap-1 text-sm font-mono text-muted-foreground">
                       <Calendar className="w-4 h-4" />
                       {project.timeframe}
                     </div>

@@ -112,8 +112,8 @@ export default function ContactPage() {
               Get In Touch
             </h1>
             <p className="text-fluid-lg text-muted-foreground max-w-2xl mx-auto">
-              I'm always interested in new opportunities, collaborations, and conversations about technology. 
-              Let's connect and explore how we can work together.
+              I&apos;m always interested in new opportunities, collaborations, and conversations about technology. 
+              Let&apos;s connect and explore how we can work together.
             </p>
           </div>
         </FadeInUp>
@@ -285,7 +285,7 @@ export default function ContactPage() {
                 <h3 className="font-semibold mb-2 text-primary">Quick Response</h3>
                 <p className="text-sm text-muted-foreground">
                   Need something urgent? Feel free to call or text me directly. 
-                  I'm usually available during business hours EST.
+                  I&apos;m usually available during business hours EST.
                 </p>
               </Card>
             </FadeInUp>
