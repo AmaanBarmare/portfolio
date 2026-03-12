@@ -25,9 +25,10 @@ export default function Home() {
           </FadeInUp>
           
           <FadeInUp delay={0.1}>
-            <p className="text-[clamp(1.25rem,3vw,1.75rem)] text-muted-foreground mb-4 font-medium">
-              {personalData.title}
-            </p>
+            <h2 className="text-[clamp(1.25rem,3vw,1.75rem)] text-muted-foreground mb-4 font-medium flex flex-col gap-1 items-center">
+              <span>{personalData.title.split(' | BS')[0]}</span>
+              <span>BS{personalData.title.split(' | BS')[1]}</span>
+            </h2>
           </FadeInUp>
           
           <FadeInUp delay={0.2}>

@@ -14,7 +14,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'Amaan Barmare - Software Engineer | Full-Stack & AI',
-  description: 'I build intelligent, scalable apps across web, data, and ML. BS CS + Econ student at Penn State, graduating May 2025.',
+  description: 'I build intelligent, scalable apps across web, data, and ML. BS CS + Econ graduate from Penn State (May 2025).',
   keywords: ['Software Engineer', 'Full-Stack Developer', 'AI', 'Machine Learning', 'React', 'Next.js', 'TypeScript'],
   authors: [{ name: 'Amaan Barmare' }],
   creator: 'Amaan Barmare',

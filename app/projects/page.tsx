@@ -32,31 +32,8 @@ export default function ProjectsPage() {
           </div>
         </FadeInUp>
 
-        {/* Featured Projects */}
-        {featuredProjects.length > 0 && (
-          <section className="mb-16">
-            <FadeInUp delay={0.1}>
-              <div className="flex items-center gap-2 mb-8">
-                <Star className="w-5 h-5 text-yellow-500" />
-                <h2 className="text-xl font-semibold">Featured Projects</h2>
-              </div>
-            </FadeInUp>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
-              {featuredProjects.map((project, index) => (
-                <FadeInUp key={project.id} delay={0.1 * (index + 2)}>
-                  <ProjectCard project={project} featured />
-                </FadeInUp>
-              ))}
-            </div>
-          </section>
-        )}
-
         {/* All Projects */}
         <section>
-          <FadeInUp delay={0.2}>
-            <h2 className="text-xl font-semibold mb-8">All Projects</h2>
-          </FadeInUp>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {projectsData.map((project, index) => (
@@ -122,9 +99,13 @@ function ProjectCard({ project, featured = false }: ProjectCardProps) {
       
       <div className="p-6">
         <div className="flex items-center justify-between mb-3">
-          <Badge variant="secondary" className="text-xs">
-            {project.category}
-          </Badge>
+          {project.category ? (
+            <Badge variant="secondary" className="text-xs">
+              {project.category}
+            </Badge>
+          ) : (
+            <div></div> // empty div to maintain flex alignment
+          )}
           <span className="text-xs text-muted-foreground">
             {project.timeframe}
           </span>

@@ -1,45 +1,130 @@
 [
   {
-    "id": "alyra",
-    "title": "Alyra",
-    "slug": "alyra",
-    "category": "E-commerce",
-    "timeframe": "2025",
-    "stack": ["Next.js", "TypeScript", "Shopify Admin API", "Tailwind CSS", "Framer Motion"],
-    "shortDescription": "India's first refillable solid parfum e-commerce platform with custom product configurator and subscription management.",
-    "problem": "The luxury fragrance market in India lacked sustainable, refillable options, and existing e-commerce platforms couldn't handle custom product configurations effectively.",
-    "solution": "Created a sophisticated e-commerce experience with custom product builder, subscription management, and seamless Shopify integration for India's first refillable solid parfum brand.",
-    "role": "Frontend Developer & E-commerce Architect",
+    "id": "echobrief",
+    "title": "EchoBrief - AI-Powered Meeting Intelligence Platform",
+    "slug": "echobrief",
+    "category": "",
+    "timeframe": "Jan 2026 – Feb 2026",
+    "stack": [
+      "React",
+      "TypeScript",
+      "PostgreSQL",
+      "Supabase",
+      "OpenAI APIs"
+    ],
+    "shortDescription": "Full-stack system that captures meeting audio, transcribes conversations, and converts them into structured summaries.",
+    "problem": "Teams struggle to keep up with action items and decisions made during meetings, leading to lost context and reduced productivity.",
+    "solution": "Built an AI pipeline using Whisper and GPT models to automatically transcribe and summarize meetings into actionable insights.",
+    "role": "Full-Stack Developer",
     "highlights": [
-      "Integrated Shopify Admin API for inventory management and order processing",
-      "Built custom product configurator with real-time preview and pricing",
-      "Implemented subscription management system for refill orders",
-      "Designed mobile-first UI with premium feel using gold and black accents"
+      "Built a full-stack system that captures meeting audio, transcribes conversations, and converts them into structured summaries",
+      "Implemented an AI pipeline using Whisper for transcription and GPT models for summarization and task extraction",
+      "Integrated Google Calendar and Slack via OAuth to automatically detect meetings and deliver summaries",
+      "Designed a real-time processing dashboard using Supabase subscriptions and WebSockets"
     ],
     "outcomes": [
-      "Launched successfully on August 27, 2024 with 500+ pre-orders",
-      "Achieved 4.8/5 user experience rating in beta testing",
-      "Processed $50K+ in sales within first month",
-      "Maintained 2.1s average page load time on mobile devices"
+      "Automated extraction of structured summaries, action items, and decision timelines",
+      "Real-time visibility into meeting processing status and system activity",
+      "Seamless scheduling and notification workflows via Google Calendar and Slack"
     ],
-    "learnings": "Learned e-commerce platform integration, gained experience with subscription business models, and developed skills in premium brand digital experience design.",
+    "learnings": "Mastered AI integrations using Whisper and GPT models, learned robust OAuth flows, and gained expertise in real-time WebSockets with Supabase.",
+    "links": {
+      "live": "https://chromewebstore.google.com/detail/feilmpoccaneccgbkankibcfkamacbag"
+    },
+    "images": [
+      "/echobrief1.png",
+      "/echobrief2.png"
+    ],
+    "featured": true
+  },
+  {
+    "id": "nexuscommerce",
+    "title": "NexusCommerce - AI-Native E-Commerce Admin Platform",
+    "slug": "nexuscommerce",
+    "category": "",
+    "timeframe": "Dec 2025 – Feb 2026",
+    "stack": [
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "Supabase",
+      "React Flow"
+    ],
+    "shortDescription": "Cloud-native admin system enabling natural-language queries to generate validated SQL workflows.",
+    "problem": "E-commerce administrators lack an intuitive way to automate business operations and directly query their data without SQL knowledge.",
+    "solution": "Developed an AI-native portal with a visual workflow orchestration engine and natural-language-to-SQL capabilities.",
+    "role": "Full-Stack Developer",
+    "highlights": [
+      "Built a cloud-native admin system that enables natural-language queries to generate validated SQL workflows",
+      "Designed REST APIs and backend middleware with role-based access control",
+      "Implemented reliable backend patterns including idempotent webhook handling and transactional integrity",
+      "Developed a visual workflow orchestration engine using React Flow for AI-driven marketing pipelines"
+    ],
+    "outcomes": [
+      "Enabled non-technical users to automate complex business operations using natural language",
+      "Scalable integrations with payments, analytics, and email services",
+      "Event-driven processing architecture for high reliability"
+    ],
+    "learnings": "Deepened knowledge of AI-driven code generation, robust REST API design, and visual workflow builders using React Flow.",
+    "links": {},
+    "images": [
+      "/NexusCommerce1.png",
+      "/NexusCommerce2.png"
+    ],
+    "featured": true
+  },
+  {
+    "id": "alyra",
+    "title": "Alyra - Headless E-Commerce Platform",
+    "slug": "alyra",
+    "category": "Web Development",
+    "timeframe": "Aug 2025 – Oct 2025",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Shopify Storefront API",
+      "Vercel Functions",
+      "Razorpay"
+    ],
+    "shortDescription": "Production headless commerce storefront built with React and Shopify Storefront API with custom checkout.",
+    "problem": "The client needed a custom, highly performant headless storefront with a unique checkout pipeline integrating Razorpay and Shopify.",
+    "solution": "Built a headless e-commerce solution using React and Vercel serverless functions, integrating Shopify Storefront API and Razorpay for seamless checkouts.",
+    "role": "Freelance Web Developer",
+    "highlights": [
+      "Built a production headless commerce storefront using React, TypeScript, and the Shopify Storefront API",
+      "Implemented a custom checkout pipeline integrating Razorpay payments and webhook-driven order creation",
+      "Developed serverless APIs for inventory management, checkout flows, and webhook handling",
+      "Integrated GA4 and Meta Pixel analytics pipelines to track conversion events and attribution"
+    ],
+    "outcomes": [
+      "Platform supported a launch generating ₹6+ lakh in revenue within the first 6 months",
+      "Secure HMAC signature verification for all webhooks",
+      "Robust client-side analytics tracking for user behavior"
+    ],
+    "learnings": "Gained experience in headless Shopify architectures, Razorpay payment flows, and serverless infrastructure on Vercel.",
     "links": {
       "live": "https://alyra.in"
     },
     "images": [
-      "/alyra.png",
+      "/alyra1.png",
       "/alyra2.png"
     ],
     "featured": true
   },
-  
   {
     "id": "ar-navigation",
     "title": "Outdoor AR Navigation",
     "slug": "ar-navigation",
     "category": "AR/Mobile App",
     "timeframe": "2024",
-    "stack": ["Unity", "C#", "ARCore", "Azure Maps", "YOLOv3", "Android"],
+    "stack": [
+      "Unity",
+      "C#",
+      "ARCore",
+      "Azure Maps",
+      "YOLOv3",
+      "Android"
+    ],
     "shortDescription": "AR-powered navigation app with real-time POI detection, GPS integration, and obstacle detection using computer vision.",
     "problem": "Traditional GPS navigation lacks context about immediate surroundings and obstacles, making it difficult for users to navigate complex outdoor environments safely.",
     "solution": "Developed an AR navigation app that overlays directional information on the real world while detecting obstacles and points of interest in real-time.",
@@ -58,7 +143,7 @@
     ],
     "learnings": "Mastered AR development fundamentals, learned about computer vision implementation in mobile apps, and gained experience with real-time performance optimization for resource-constrained devices.",
     "links": {
-      "live":"https://www.youtube.com/watch?v=dENTbLwHhQE"
+      "live": "https://www.youtube.com/watch?v=dENTbLwHhQE"
     },
     "images": [
       "/ar-nav.png",
@@ -66,14 +151,21 @@
     ],
     "featured": true
   },
-
   {
     "id": "nexthire",
     "title": "NextHire",
     "slug": "nexthire",
     "category": "Full-Stack Web App",
     "timeframe": "2024",
-    "stack": ["MongoDB", "Express.js", "React", "Node.js", "Cloudinary", "Multer", "JWT"],
+    "stack": [
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+      "Cloudinary",
+      "Multer",
+      "JWT"
+    ],
     "shortDescription": "Comprehensive recruiting platform with separate recruiter and company workflows, file uploads, and advanced filtering.",
     "problem": "Recruiting processes are fragmented across multiple platforms, making it difficult for recruiters to manage candidates and for companies to track hiring pipelines effectively.",
     "solution": "Built a unified MERN stack platform that streamlines the entire recruiting workflow with role-based access, file management, and real-time updates.",
@@ -99,16 +191,20 @@
       "/NextHire.png",
       "/Nexthire2.png"
     ],
-    "featured": true
+    "featured": false
   },
-  
   {
     "id": "concurrency-channels",
     "title": "Concurrency Channels",
     "slug": "concurrency-channels",
     "category": "Systems Programming",
     "timeframe": "2024",
-    "stack": ["C", "pthreads", "Valgrind", "GDB"],
+    "stack": [
+      "C",
+      "pthreads",
+      "Valgrind",
+      "GDB"
+    ],
     "shortDescription": "High-performance concurrent channel implementation with blocking/non-blocking operations and thread-safe synchronization.",
     "problem": "Need for efficient inter-thread communication mechanism that supports both blocking and non-blocking operations while maintaining thread safety and preventing race conditions.",
     "solution": "Implemented a robust channel system using C and pthreads with condition variables for synchronization and comprehensive memory management.",
@@ -138,7 +234,11 @@
     "slug": "cpu-scheduler",
     "category": "Operating Systems",
     "timeframe": "2024",
-    "stack": ["C", "Data Structures", "Algorithms"],
+    "stack": [
+      "C",
+      "Data Structures",
+      "Algorithms"
+    ],
     "shortDescription": "Discrete-event CPU scheduler simulator implementing FCFS, LCFS, SJF, and MLFQ algorithms with performance analysis.",
     "problem": "Understanding and comparing the performance characteristics of different CPU scheduling algorithms in various workload scenarios.",
     "solution": "Built a comprehensive discrete-event simulator that implements multiple scheduling algorithms and provides detailed performance metrics.",
@@ -168,7 +268,12 @@
     "slug": "malloc-lab",
     "category": "Systems Programming",
     "timeframe": "2024",
-    "stack": ["C", "Memory Management", "Valgrind", "GDB"],
+    "stack": [
+      "C",
+      "Memory Management",
+      "Valgrind",
+      "GDB"
+    ],
     "shortDescription": "Custom malloc implementation with 16-byte alignment, heap checker, and >90% space utilization across trace files.",
     "problem": "Implementing an efficient dynamic memory allocator that balances speed and space utilization while maintaining memory alignment and preventing corruption.",
     "solution": "Developed a sophisticated malloc implementation using explicit free lists with first-fit allocation and comprehensive error checking.",
@@ -198,7 +303,13 @@
     "slug": "stock-monitor-bot",
     "category": "Automation",
     "timeframe": "2023",
-    "stack": ["Node.js", "Python", "Discord.js", "Axios", "Cheerio"],
+    "stack": [
+      "Node.js",
+      "Python",
+      "Discord.js",
+      "Axios",
+      "Cheerio"
+    ],
     "shortDescription": "Automated Discord bot that monitors Amazon product availability and sends real-time alerts with price tracking.",
     "problem": "Difficulty tracking product availability and price changes on Amazon, especially for high-demand items that sell out quickly.",
     "solution": "Created an automated monitoring system that scrapes Amazon product pages and sends instant Discord notifications when items become available or prices drop.",

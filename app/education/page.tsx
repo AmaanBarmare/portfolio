@@ -26,7 +26,7 @@ export default function EducationPage() {
               Education
             </h1>
             <p className="text-fluid-lg text-muted-foreground max-w-2xl mx-auto">
-              My academic journey at Penn State University, where I'm building a strong foundation 
+              My academic journey at Penn State University, where I built a strong foundation 
               in computer science and economics while actively participating in tech communities.
             </p>
           </div>
@@ -200,7 +200,7 @@ export default function EducationPage() {
         {/* Call to Action */}
         <FadeInUp delay={0.5}>
           <div className="text-center mt-16">
-            <h2 className="text-xl font-semibold mb-4">Ready to Graduate and Make an Impact</h2>
+            <h2 className="text-xl font-semibold mb-4">Ready to Make an Impact</h2>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
               With a strong academic foundation and hands-on experience, I'm excited to bring my 
               skills to a dynamic team and contribute to innovative projects.
