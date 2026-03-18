@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from 'react';
-import { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -34,8 +33,17 @@ export default function ContactPage() {
     setIsSubmitting(true);
 
     try {
-      // Simulate form submission (replace with actual endpoint)
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send');
+      }
       
       setIsSubmitted(true);
       toast.success('Message sent successfully! I\'ll get back to you soon.');
