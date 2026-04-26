@@ -5,7 +5,7 @@
     "role": "Founding Engineer",
     "timeframe": "Jan 2026 – Present",
     "location": "Remote",
-    "logo": null,
+    "logo": "/OFfavicon.png",
     "bullets": [
       "Built Estora Guard, a real-estate transaction platform with LlamaParse contract ingestion (AOS, HOA, closing docs), automated risk extraction with confidence scoring, and a role-aware AI agent governed by NemoClaw, with a manifest-driven policy engine, human approval gates on PII, and a red-team console that runs eight adversarial attacks against the policy layer.",
       "Built EchoBrief, a meeting-intelligence SaaS with two recording paths feeding the same pipeline: a Recall calendar bot and a Chrome MV3 extension that survives service-worker restarts via offscreen-document capture. Sarvam STT with Whisper fallback, GPT-4o-mini for structured insights, and 18+ Supabase Edge Functions for async processing and Slack/email/digest delivery.",
