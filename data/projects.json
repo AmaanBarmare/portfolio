@@ -1,336 +1,68 @@
 [
   {
+    "id": "estora-guard",
+    "title": "Estora Guard",
+    "blurb": "Real-estate transaction platform with a role-aware AI agent secured by NemoClaw — LlamaParse contract ingestion, deal health scoring, manifest-driven policy gates with human approval on PII, and a red-team attack console that runs eight adversarial cases against the policy layer.",
+    "stack": ["Next.js", "TypeScript", "Supabase", "Anthropic Claude", "LlamaParse", "NemoClaw"],
+    "links": { "live": "https://estora-guard.vercel.app", "repo": "https://github.com/AmaanBarmare/estora-guard" },
+    "org": "Oltaflock"
+  },
+  {
     "id": "echobrief",
-    "title": "EchoBrief - AI-Powered Meeting Intelligence Platform",
-    "slug": "echobrief",
-    "category": "",
-    "timeframe": "Jan 2026 – Feb 2026",
-    "stack": [
-      "React",
-      "TypeScript",
-      "PostgreSQL",
-      "Supabase",
-      "OpenAI APIs"
-    ],
-    "shortDescription": "Full-stack system that captures meeting audio, transcribes conversations, and converts them into structured summaries.",
-    "problem": "Teams struggle to keep up with action items and decisions made during meetings, leading to lost context and reduced productivity.",
-    "solution": "Built an AI pipeline using Whisper and GPT models to automatically transcribe and summarize meetings into actionable insights.",
-    "role": "Full-Stack Developer",
-    "highlights": [
-      "Built a full-stack system that captures meeting audio, transcribes conversations, and converts them into structured summaries",
-      "Implemented an AI pipeline using Whisper for transcription and GPT models for summarization and task extraction",
-      "Integrated Google Calendar and Slack via OAuth to automatically detect meetings and deliver summaries",
-      "Designed a real-time processing dashboard using Supabase subscriptions and WebSockets"
-    ],
-    "outcomes": [
-      "Automated extraction of structured summaries, action items, and decision timelines",
-      "Real-time visibility into meeting processing status and system activity",
-      "Seamless scheduling and notification workflows via Google Calendar and Slack"
-    ],
-    "learnings": "Mastered AI integrations using Whisper and GPT models, learned robust OAuth flows, and gained expertise in real-time WebSockets with Supabase.",
-    "links": {
-      "live": "https://chromewebstore.google.com/detail/feilmpoccaneccgbkankibcfkamacbag"
-    },
-    "images": [
-      "/echobrief1.png",
-      "/echobrief2.png"
-    ],
-    "featured": true
+    "title": "EchoBrief",
+    "blurb": "Meeting-intelligence SaaS with two recording paths feeding one pipeline — a Recall calendar bot and a Chrome MV3 extension that persists state to chrome.storage.local so recordings survive service-worker restarts. Sarvam STT with Whisper fallback, GPT-4o-mini for structured insights, multi-channel delivery (Slack, email, digest reports).",
+    "stack": ["React", "TypeScript", "Supabase", "Chrome MV3", "Sarvam AI", "OpenAI", "Recall AI"],
+    "links": { "live": "https://echobrief.in", "repo": "https://github.com/Oltaflock-AI/echobrief" },
+    "org": "Oltaflock"
+  },
+  {
+    "id": "godown-ai",
+    "title": "GodownAI",
+    "blurb": "Warehouse-rental invoicing platform for Indian landlords. Auto-detects GST treatment from the GSTIN (CGST/SGST vs IGST), generates invoice PDFs client-side with jsPDF, delivers via Resend, and time-locks payment reminders so you can't fire one off before the due-date buffer expires.",
+    "stack": ["React", "TypeScript", "Firebase", "Cloud Functions", "jsPDF", "Resend"],
+    "links": { "live": "https://godown-ai.vercel.app", "repo": "https://github.com/Oltaflock-AI/godown-ai" },
+    "org": "Oltaflock"
   },
   {
     "id": "nexuscommerce",
-    "title": "NexusCommerce - AI-Native E-Commerce Admin Platform",
-    "slug": "nexuscommerce",
-    "category": "",
-    "timeframe": "Dec 2025 – Feb 2026",
-    "stack": [
-      "Next.js",
-      "TypeScript",
-      "Prisma",
-      "Supabase",
-      "React Flow"
-    ],
-    "shortDescription": "Cloud-native admin system enabling natural-language queries to generate validated SQL workflows.",
-    "problem": "E-commerce administrators lack an intuitive way to automate business operations and directly query their data without SQL knowledge.",
-    "solution": "Developed an AI-native portal with a visual workflow orchestration engine and natural-language-to-SQL capabilities.",
-    "role": "Full-Stack Developer",
-    "highlights": [
-      "Built a cloud-native admin system that enables natural-language queries to generate validated SQL workflows",
-      "Designed REST APIs and backend middleware with role-based access control",
-      "Implemented reliable backend patterns including idempotent webhook handling and transactional integrity",
-      "Developed a visual workflow orchestration engine using React Flow for AI-driven marketing pipelines"
-    ],
-    "outcomes": [
-      "Enabled non-technical users to automate complex business operations using natural language",
-      "Scalable integrations with payments, analytics, and email services",
-      "Event-driven processing architecture for high reliability"
-    ],
-    "learnings": "Deepened knowledge of AI-driven code generation, robust REST API design, and visual workflow builders using React Flow.",
-    "links": {},
-    "images": [
-      "/NexusCommerce1.png",
-      "/NexusCommerce2.png"
-    ],
-    "featured": true
+    "title": "NexusCommerce",
+    "blurb": "AI-native e-commerce admin platform — natural-language → validated SQL over a whitelisted table set, RAG email generation with pgvector, idempotent Razorpay webhooks (HMAC verified), and a React Flow visual workflow builder. Powers Alyra in production.",
+    "stack": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "OpenAI", "React Flow", "Razorpay"],
+    "links": { "repo": "https://github.com/AmaanBarmare/Nexus-Commerce" }
+  },
+  {
+    "id": "claritybot",
+    "title": "ClarityBot",
+    "blurb": "Live AI fact-checking pipeline built on the OpenClaw five-skill agent shape: extractor → searcher → crossref → scorer → emitter. Credibility-aware scoring with hard caps when evidence is weak, every stage streamed to the UI over Server-Sent Events so the agent's reasoning is inspectable in real time.",
+    "stack": ["React", "FastAPI", "Python", "Supabase", "Gemini", "Serper", "SSE"],
+    "links": { "live": "https://clarity-bot-brown.vercel.app", "repo": "https://github.com/AmaanBarmare/clarity-bot" }
   },
   {
     "id": "alyra",
-    "title": "Alyra - Headless E-Commerce Platform",
-    "slug": "alyra",
-    "category": "Web Development",
-    "timeframe": "Aug 2025 – Oct 2025",
-    "stack": [
-      "React",
-      "TypeScript",
-      "Shopify Storefront API",
-      "Vercel Functions",
-      "Razorpay"
-    ],
-    "shortDescription": "Production headless commerce storefront built with React and Shopify Storefront API with custom checkout.",
-    "problem": "The client needed a custom, highly performant headless storefront with a unique checkout pipeline integrating Razorpay and Shopify.",
-    "solution": "Built a headless e-commerce solution using React and Vercel serverless functions, integrating Shopify Storefront API and Razorpay for seamless checkouts.",
-    "role": "Freelance Web Developer",
-    "highlights": [
-      "Built a production headless commerce storefront using React, TypeScript, and the Shopify Storefront API",
-      "Implemented a custom checkout pipeline integrating Razorpay payments and webhook-driven order creation",
-      "Developed serverless APIs for inventory management, checkout flows, and webhook handling",
-      "Integrated GA4 and Meta Pixel analytics pipelines to track conversion events and attribution"
-    ],
-    "outcomes": [
-      "Platform supported a launch generating ₹6+ lakh in revenue within the first 6 months",
-      "Secure HMAC signature verification for all webhooks",
-      "Robust client-side analytics tracking for user behavior"
-    ],
-    "learnings": "Gained experience in headless Shopify architectures, Razorpay payment flows, and serverless infrastructure on Vercel.",
-    "links": {
-      "live": "https://alyra.in"
-    },
-    "images": [
-      "/alyra1.png",
-      "/alyra2.png"
-    ],
-    "featured": true
+    "title": "Alyra",
+    "blurb": "Headless Shopify storefront for an early-stage solid-perfumes brand in India. Custom Razorpay checkout, webhook-driven order automation, GA4 + Meta Pixel attribution. Generated $10k+ in revenue in the first six months — and runs on the NexusCommerce backend.",
+    "stack": ["React", "TypeScript", "Shopify Storefront API", "Razorpay", "Vercel Functions", "GA4"],
+    "links": { "live": "https://alyra.in" }
+  },
+  {
+    "id": "contractiq",
+    "title": "ContractIQ",
+    "blurb": "Six-agent contract-renewal platform for the Enterprise Agents Hackathon. IBM Watsonx Orchestrate as the master, FastAPI + Redis + Anthropic + Tavily underneath, WebSocket live agent feed, 40+ extracted contract fields with per-field confidence scoring.",
+    "stack": ["Next.js", "FastAPI", "Python", "Redis", "Anthropic Claude", "IBM Watsonx", "Tavily"],
+    "links": { "live": "https://contract-iq-gamma.vercel.app", "repo": "https://github.com/AmaanBarmare/ContractIQ" }
+  },
+  {
+    "id": "resolvr",
+    "title": "Resolvr",
+    "blurb": "Multi-agent conflict arbitration — when two AIs disagree on a recommendation, who decides? Five-stage SSE pipeline (forensics → grounding → simulation → brief), Veris-sandboxed agents, Baseten-served Claude Sonnet 4.5, and You.com for live market grounding. Built for Enterprise Agent Jam NYC 2026.",
+    "stack": ["Next.js", "FastAPI", "Python", "Veris AI", "Baseten", "Claude Sonnet 4.5", "You.com"],
+    "links": { "repo": "https://github.com/AmaanBarmare/resolvr" }
   },
   {
     "id": "ar-navigation",
     "title": "Outdoor AR Navigation",
-    "slug": "ar-navigation",
-    "category": "AR/Mobile App",
-    "timeframe": "2024",
-    "stack": [
-      "Unity",
-      "C#",
-      "ARCore",
-      "Azure Maps",
-      "YOLOv3",
-      "Android"
-    ],
-    "shortDescription": "AR-powered navigation app with real-time POI detection, GPS integration, and obstacle detection using computer vision.",
-    "problem": "Traditional GPS navigation lacks context about immediate surroundings and obstacles, making it difficult for users to navigate complex outdoor environments safely.",
-    "solution": "Developed an AR navigation app that overlays directional information on the real world while detecting obstacles and points of interest in real-time.",
-    "role": "AR Developer & Computer Vision Engineer",
-    "highlights": [
-      "Integrated ARCore with Unity for real-time AR tracking and object placement",
-      "Implemented YOLOv3 for real-time obstacle detection and avoidance",
-      "Connected Azure Maps API for accurate GPS positioning and route calculation",
-      "Built custom UI components optimized for AR viewing and outdoor lighting"
-    ],
-    "outcomes": [
-      "Achieved 95% accuracy in obstacle detection across various lighting conditions",
-      "Maintained 30+ FPS performance on mid-range Android devices",
-      "Reduced navigation errors by 60% compared to traditional GPS apps",
-      "Successfully tested in 20+ outdoor environments with different terrain types"
-    ],
-    "learnings": "Mastered AR development fundamentals, learned about computer vision implementation in mobile apps, and gained experience with real-time performance optimization for resource-constrained devices.",
-    "links": {
-      "live": "https://www.youtube.com/watch?v=dENTbLwHhQE"
-    },
-    "images": [
-      "/ar-nav.png",
-      "/ar-nav2.jpeg"
-    ],
-    "featured": true
-  },
-  {
-    "id": "nexthire",
-    "title": "NextHire",
-    "slug": "nexthire",
-    "category": "Full-Stack Web App",
-    "timeframe": "2024",
-    "stack": [
-      "MongoDB",
-      "Express.js",
-      "React",
-      "Node.js",
-      "Cloudinary",
-      "Multer",
-      "JWT"
-    ],
-    "shortDescription": "Comprehensive recruiting platform with separate recruiter and company workflows, file uploads, and advanced filtering.",
-    "problem": "Recruiting processes are fragmented across multiple platforms, making it difficult for recruiters to manage candidates and for companies to track hiring pipelines effectively.",
-    "solution": "Built a unified MERN stack platform that streamlines the entire recruiting workflow with role-based access, file management, and real-time updates.",
-    "role": "Full-Stack Developer",
-    "highlights": [
-      "Implemented JWT-based authentication with role-based access control for recruiters and companies",
-      "Built file upload system using Cloudinary and Multer for resume and document management",
-      "Created advanced filtering and search functionality for candidate management",
-      "Designed responsive UI with React and modern CSS for optimal mobile experience"
-    ],
-    "outcomes": [
-      "Reduced hiring process time by 40% through streamlined workflows",
-      "Achieved 99.9% file upload success rate with robust error handling",
-      "Supported concurrent users with optimized database queries",
-      "Deployed with 95% uptime and fast load times across devices"
-    ],
-    "learnings": "Gained deep experience in full-stack development, learned the importance of role-based security in business applications, and developed skills in file handling and cloud storage integration.",
-    "links": {
-      "live": "https://nexthire-kgbf.onrender.com/",
-      "repo": "https://github.com/AmaanBarmare/NextHire"
-    },
-    "images": [
-      "/NextHire.png",
-      "/Nexthire2.png"
-    ],
-    "featured": false
-  },
-  {
-    "id": "concurrency-channels",
-    "title": "Concurrency Channels",
-    "slug": "concurrency-channels",
-    "category": "Systems Programming",
-    "timeframe": "2024",
-    "stack": [
-      "C",
-      "pthreads",
-      "Valgrind",
-      "GDB"
-    ],
-    "shortDescription": "High-performance concurrent channel implementation with blocking/non-blocking operations and thread-safe synchronization.",
-    "problem": "Need for efficient inter-thread communication mechanism that supports both blocking and non-blocking operations while maintaining thread safety and preventing race conditions.",
-    "solution": "Implemented a robust channel system using C and pthreads with condition variables for synchronization and comprehensive memory management.",
-    "role": "Systems Programmer",
-    "highlights": [
-      "Implemented blocking and non-blocking send/receive operations",
-      "Used condition variables and mutexes for thread-safe synchronization",
-      "Achieved zero memory leaks validated with Valgrind",
-      "Built comprehensive test suite covering edge cases and race conditions"
-    ],
-    "outcomes": [
-      "Achieved 99.9% correctness across 1000+ concurrent operations",
-      "Passed all Valgrind memory checks with zero leaks",
-      "Demonstrated 40% performance improvement over naive implementations",
-      "Successfully handled 100+ concurrent threads without deadlocks"
-    ],
-    "learnings": "Gained deep understanding of concurrent programming, learned advanced debugging techniques with Valgrind and GDB, and developed expertise in thread synchronization patterns.",
-    "links": {
-      "repo": "https://github.com/AmaanBarmare/concurrency-channels"
-    },
-    "images": [],
-    "featured": false
-  },
-  {
-    "id": "cpu-scheduler",
-    "title": "CPU Scheduler Simulator",
-    "slug": "cpu-scheduler",
-    "category": "Operating Systems",
-    "timeframe": "2024",
-    "stack": [
-      "C",
-      "Data Structures",
-      "Algorithms"
-    ],
-    "shortDescription": "Discrete-event CPU scheduler simulator implementing FCFS, LCFS, SJF, and MLFQ algorithms with performance analysis.",
-    "problem": "Understanding and comparing the performance characteristics of different CPU scheduling algorithms in various workload scenarios.",
-    "solution": "Built a comprehensive discrete-event simulator that implements multiple scheduling algorithms and provides detailed performance metrics.",
-    "role": "Systems Developer",
-    "highlights": [
-      "Implemented FCFS, LCFS, SJF, and Multi-Level Feedback Queue algorithms",
-      "Built discrete-event simulation engine with priority queue",
-      "Created comprehensive performance analysis and visualization tools",
-      "Validated results against theoretical performance expectations"
-    ],
-    "outcomes": [
-      "Accurately simulated 10,000+ process scheduling scenarios",
-      "Demonstrated 25% throughput improvement with optimized MLFQ",
-      "Generated detailed performance reports for algorithm comparison",
-      "Achieved 100% accuracy in scheduler correctness tests"
-    ],
-    "learnings": "Deepened understanding of operating system concepts, learned discrete-event simulation techniques, and developed skills in algorithm performance analysis.",
-    "links": {
-      "repo": "https://github.com/AmaanBarmare/cpu-scheduler"
-    },
-    "images": [],
-    "featured": false
-  },
-  {
-    "id": "malloc-lab",
-    "title": "Dynamic Memory Allocator",
-    "slug": "malloc-lab",
-    "category": "Systems Programming",
-    "timeframe": "2024",
-    "stack": [
-      "C",
-      "Memory Management",
-      "Valgrind",
-      "GDB"
-    ],
-    "shortDescription": "Custom malloc implementation with 16-byte alignment, heap checker, and >90% space utilization across trace files.",
-    "problem": "Implementing an efficient dynamic memory allocator that balances speed and space utilization while maintaining memory alignment and preventing corruption.",
-    "solution": "Developed a sophisticated malloc implementation using explicit free lists with first-fit allocation and comprehensive error checking.",
-    "role": "Systems Programmer",
-    "highlights": [
-      "Achieved 16-byte memory alignment for optimal performance",
-      "Implemented explicit free lists for efficient allocation/deallocation",
-      "Built comprehensive heap checker to detect memory corruption",
-      "Optimized for both speed and space utilization across diverse workloads"
-    ],
-    "outcomes": [
-      "Achieved >90% space utilization across all trace files",
-      "Maintained sub-millisecond allocation times for 1MB+ allocations",
-      "Passed 100% of memory corruption detection tests",
-      "Outperformed standard malloc in 8/10 benchmark scenarios"
-    ],
-    "learnings": "Mastered low-level memory management, learned advanced debugging techniques for memory issues, and gained expertise in performance optimization at the system level.",
-    "links": {
-      "repo": "https://github.com/AmaanBarmare/malloc-lab"
-    },
-    "images": [],
-    "featured": false
-  },
-  {
-    "id": "stock-monitor-bot",
-    "title": "Amazon Stock Monitor Bot",
-    "slug": "stock-monitor-bot",
-    "category": "Automation",
-    "timeframe": "2023",
-    "stack": [
-      "Node.js",
-      "Python",
-      "Discord.js",
-      "Axios",
-      "Cheerio"
-    ],
-    "shortDescription": "Automated Discord bot that monitors Amazon product availability and sends real-time alerts with price tracking.",
-    "problem": "Difficulty tracking product availability and price changes on Amazon, especially for high-demand items that sell out quickly.",
-    "solution": "Created an automated monitoring system that scrapes Amazon product pages and sends instant Discord notifications when items become available or prices drop.",
-    "role": "Automation Developer",
-    "highlights": [
-      "Built web scraping system with Axios and Cheerio for product data extraction",
-      "Integrated Discord.js for real-time notifications and user interaction",
-      "Implemented price tracking with percentage change alerts",
-      "Added user management system for personalized monitoring lists"
-    ],
-    "outcomes": [
-      "Successfully monitored 500+ products across multiple categories",
-      "Achieved 99.5% uptime with automated error recovery",
-      "Delivered notifications with <30 second latency",
-      "Helped users secure 50+ high-demand products through timely alerts"
-    ],
-    "learnings": "Learned web scraping techniques and anti-detection methods, gained experience with Discord bot development, and developed skills in automated monitoring systems.",
-    "links": {
-      "repo": "https://github.com/AmaanBarmare/amazon-stock-bot"
-    },
-    "images": [],
-    "featured": false
+    "blurb": "AR navigation app overlaying directions on the real world while detecting obstacles and points of interest in real time. ARCore + Unity for AR tracking, YOLOv3 for obstacle detection, Azure Maps for routing — 30+ FPS on mid-range Android.",
+    "stack": ["Unity", "C#", "ARCore", "YOLOv3", "Azure Maps", "Android"],
+    "links": { "live": "https://www.youtube.com/watch?v=dENTbLwHhQE" }
   }
 ]

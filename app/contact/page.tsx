@@ -1,16 +1,46 @@
 "use client";
 
 import { useState } from 'react';
-import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { Mail, Github, Linkedin, MapPin, Phone, Send, Check } from 'lucide-react';
+import { Mail, Github, Linkedin, Send, Check, ArrowUpRight } from 'lucide-react';
 import { FadeInUp } from '@/components/animations/fade-in-up';
 import { toast } from 'sonner';
 import personalData from '@/data/personal.json';
+
+type ContactCard = {
+  icon: React.ComponentType<{ className?: string }>;
+  label: string;
+  description: string;
+  display: string;
+  href: string;
+};
+
+const cards: ContactCard[] = [
+  {
+    icon: Mail,
+    label: 'Email',
+    description: 'For everything else.',
+    display: personalData.email,
+    href: `mailto:${personalData.email}`,
+  },
+  {
+    icon: Github,
+    label: 'GitHub',
+    description: 'Code I\'ve shipped.',
+    display: 'AmaanBarmare',
+    href: personalData.github,
+  },
+  {
+    icon: Linkedin,
+    label: 'LinkedIn',
+    description: 'Roles and recruiters.',
+    display: 'amaan-barmare-3bw',
+    href: personalData.linkedin,
+  },
+];
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -19,309 +49,182 @@ export default function ContactPage() {
     name: '',
     email: '',
     message: '',
-    honeypot: '', // Anti-spam field
+    honeypot: '',
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Check honeypot
-    if (formData.honeypot) {
-      return; // Spam detected
-    }
+
+    if (formData.honeypot) return;
 
     setIsSubmitting(true);
-
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
 
-      if (!response.ok) {
-        throw new Error('Failed to send');
-      }
-      
+      if (!response.ok) throw new Error('Failed to send');
+
       setIsSubmitted(true);
-      toast.success('Message sent successfully! I\'ll get back to you soon.');
-      
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        message: '',
-        honeypot: '',
-      });
-    } catch (error) {
+      toast.success('Message sent. I\'ll get back to you soon.');
+      setFormData({ name: '', email: '', message: '', honeypot: '' });
+    } catch {
       toast.error('Failed to send message. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const contactMethods = [
-    {
-      icon: Mail,
-      label: 'Email',
-      value: personalData.email,
-      href: `mailto:${personalData.email}`,
-      copyable: true,
-    },
-    {
-      icon: Phone,
-      label: 'Phone',
-      value: personalData.phone,
-      href: `tel:${personalData.phone}`,
-      copyable: true,
-    },
-    {
-      icon: MapPin,
-      label: 'Location',
-      value: personalData.location,
-      href: null,
-      copyable: false,
-    },
-  ];
-
-  const socialLinks = [
-    {
-      icon: Github,
-      label: 'GitHub',
-      href: personalData.github,
-    },
-    {
-      icon: Linkedin,
-      label: 'LinkedIn',
-      href: personalData.linkedin,
-    },
-  ];
-
-  const copyToClipboard = (text: string, label: string) => {
-    navigator.clipboard.writeText(text);
-    toast.success(`${label} copied to clipboard!`);
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
-    <main id="main-content" className="min-h-screen px-4 py-16 md:py-20">
-      <div className="container mx-auto max-w-4xl">
+    <main className="relative min-h-screen overflow-hidden">
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:32px_32px]" />
+      <div className="pointer-events-none absolute right-1/3 top-32 -z-10 h-[400px] w-[400px] rounded-full bg-primary/15 blur-[140px]" />
+
+      <section className="container relative z-10 mx-auto max-w-4xl px-4 py-20 md:py-24">
         <FadeInUp>
-          <div className="text-center mb-16">
-            <h1 className="text-[clamp(2rem,4.5vw,3rem)] font-bold mb-6">
-              Get In Touch
-            </h1>
-            <p className="text-fluid-lg text-muted-foreground max-w-2xl mx-auto">
-              I&apos;m always interested in new opportunities, collaborations, and conversations about technology. 
-              Let&apos;s connect and explore how we can work together.
-            </p>
-          </div>
+          <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
+            04 — Contact
+          </p>
+          <h1 className="mb-4 text-[clamp(2rem,4.5vw,3.25rem)] font-bold leading-tight tracking-tight">
+            <span className="bg-gradient-to-r from-primary via-indigo-400 to-teal-400 bg-clip-text text-transparent">
+              Let&apos;s talk
+            </span>
+          </h1>
+          <p className="mb-12 max-w-xl text-base text-muted-foreground md:text-lg">
+            Reach out for roles, collaborations, or anything you&apos;re building.
+          </p>
         </FadeInUp>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Contact Form */}
-          <div className="lg:col-span-2">
-            <FadeInUp delay={0.1}>
-              <Card className="p-6 md:p-8">
-                <h2 className="text-xl font-semibold mb-6">Send me a message</h2>
-                
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  {/* Honeypot field (hidden) */}
-                  <input
-                    type="text"
-                    name="honeypot"
-                    value={formData.honeypot}
-                    onChange={handleInputChange}
-                    style={{ display: 'none' }}
-                    tabIndex={-1}
-                    autoComplete="off"
-                  />
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <Label htmlFor="name">Name *</Label>
-                      <Input
-                        id="name"
-                        name="name"
-                        type="text"
-                        required
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        className="mt-2 min-h-[48px]"
-                        autoComplete="name"
-                        placeholder="Your full name"
-                      />
-                    </div>
-                    
-                    <div>
-                      <Label htmlFor="email">Email *</Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        required
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        className="mt-2 min-h-[48px]"
-                        autoComplete="email"
-                        inputMode="email"
-                        placeholder="your.email@example.com"
-                      />
-                    </div>
+        <div className="mb-16 grid grid-cols-1 gap-4 md:grid-cols-3">
+          {cards.map((card, index) => (
+            <FadeInUp key={card.label} delay={0.05 * index}>
+              <a
+                href={card.href}
+                target={card.href.startsWith('mailto:') ? undefined : '_blank'}
+                rel={card.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
+                className="group relative flex h-full flex-col rounded-xl border border-border/60 bg-card/40 p-5 backdrop-blur-sm transition-all duration-300 hover:border-primary/40 hover:bg-card/60 hover:shadow-[0_0_28px_rgba(99,102,241,0.08)]"
+              >
+                <div className="mb-3 flex items-center justify-between">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-md border border-border/60 bg-background/60">
+                    <card.icon className="h-4 w-4 text-muted-foreground transition-colors group-hover:text-primary" />
                   </div>
-
-                  <div>
-                    <Label htmlFor="message">Message *</Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      required
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      className="mt-2 min-h-[120px] resize-none"
-                      placeholder="Tell me about your project, opportunity, or just say hello..."
-                      rows={5}
-                    />
-                  </div>
-
-                  <Button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full min-h-[48px] px-8"
-                  >
-                    {isSubmitting ? (
-                      <>
-                        <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
-                        Sending...
-                      </>
-                    ) : isSubmitted ? (
-                      <>
-                        <Check className="w-4 h-4 mr-2" />
-                        Message Sent!
-                      </>
-                    ) : (
-                      <>
-                        <Send className="w-4 h-4 mr-2" />
-                        Send Message
-                      </>
-                    )}
-                  </Button>
-
-                  <p className="text-xs text-muted-foreground text-center">
-                    I typically respond within 24 hours. All inquiries are welcome!
-                  </p>
-                </form>
-              </Card>
-            </FadeInUp>
-          </div>
-
-          {/* Contact Info Sidebar */}
-          <div className="space-y-6">
-            <FadeInUp delay={0.2}>
-              <Card className="p-6">
-                <h3 className="font-semibold mb-4">Contact Information</h3>
-                <div className="space-y-4">
-                  {contactMethods.map((method) => (
-                    <div key={method.label} className="flex items-start gap-3">
-                      <div className="p-2 rounded-lg bg-muted flex-shrink-0">
-                        <method.icon className="w-4 h-4" />
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <p className="text-sm font-medium">{method.label}</p>
-                        {method.href ? (
-                          <a
-                            href={method.href}
-                            className="text-sm text-muted-foreground hover:text-primary transition-colors break-all"
-                          >
-                            {method.value}
-                          </a>
-                        ) : (
-                          <p className="text-sm text-muted-foreground">{method.value}</p>
-                        )}
-                        {method.copyable && (
-                          <Button
-                            variant="ghost"
-                            size="sm"
-                            className="h-6 px-2 text-xs mt-1"
-                            onClick={() => copyToClipboard(method.value, method.label)}
-                          >
-                            Copy
-                          </Button>
-                        )}
-                      </div>
-                    </div>
-                  ))}
+                  <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary" />
                 </div>
-              </Card>
-            </FadeInUp>
-
-            <FadeInUp delay={0.3}>
-              <Card className="p-6">
-                <h3 className="font-semibold mb-4">Follow Me</h3>
-                <div className="space-y-3">
-                  {socialLinks.map((link) => (
-                    <Button
-                      key={link.label}
-                      asChild
-                      variant="outline"
-                      className="w-full min-h-[44px] justify-start"
-                    >
-                      <a
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <link.icon className="w-4 h-4 mr-3" />
-                        {link.label}
-                      </a>
-                    </Button>
-                  ))}
-                </div>
-              </Card>
-            </FadeInUp>
-
-            <FadeInUp delay={0.4}>
-              <Card className="p-6 bg-gradient-to-br from-primary/5 to-teal-600/5 border-primary/20">
-                <h3 className="font-semibold mb-2 text-primary">Quick Response</h3>
-                <p className="text-sm text-muted-foreground">
-                  Need something urgent? Feel free to call or text me directly. 
-                  I&apos;m usually available during business hours EST.
+                <p className="text-sm font-semibold tracking-tight">{card.label}</p>
+                <p className="mb-3 text-xs text-muted-foreground">{card.description}</p>
+                <p className="mt-auto break-all font-mono text-[11px] text-muted-foreground/80">
+                  {card.display}
                 </p>
-              </Card>
+              </a>
             </FadeInUp>
-          </div>
+          ))}
         </div>
 
-        {/* Alternative Contact */}
-        <FadeInUp delay={0.5}>
-          <div className="text-center mt-16 pt-8 border-t">
-            <h2 className="text-lg font-semibold mb-4">Prefer a Different Approach?</h2>
-            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              You can also download my resume or connect with me directly on professional platforms.
+        <FadeInUp delay={0.2}>
+          <div className="rounded-2xl border border-border/60 bg-card/40 p-6 backdrop-blur-sm md:p-8">
+            <p className="mb-1 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
+              Or send a message
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild variant="outline" size="lg" className="min-h-[48px] px-8">
-                <Link href="/resume">
-                  View Resume
-                </Link>
+            <h2 className="mb-6 text-xl font-semibold tracking-tight">Drop a line</h2>
+
+            <form onSubmit={handleSubmit} className="space-y-5">
+              <input
+                type="text"
+                name="honeypot"
+                value={formData.honeypot}
+                onChange={handleInputChange}
+                style={{ display: 'none' }}
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+              />
+
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div>
+                  <Label htmlFor="name" className="font-mono text-xs uppercase tracking-wider text-muted-foreground">
+                    Name
+                  </Label>
+                  <Input
+                    id="name"
+                    name="name"
+                    type="text"
+                    required
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    className="mt-2 min-h-[44px] bg-background/40"
+                    autoComplete="name"
+                    placeholder="Your full name"
+                  />
+                </div>
+                <div>
+                  <Label htmlFor="email" className="font-mono text-xs uppercase tracking-wider text-muted-foreground">
+                    Email
+                  </Label>
+                  <Input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className="mt-2 min-h-[44px] bg-background/40"
+                    autoComplete="email"
+                    inputMode="email"
+                    placeholder="you@example.com"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <Label htmlFor="message" className="font-mono text-xs uppercase tracking-wider text-muted-foreground">
+                  Message
+                </Label>
+                <Textarea
+                  id="message"
+                  name="message"
+                  required
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  className="mt-2 min-h-[140px] resize-none bg-background/40"
+                  placeholder="What would you like to talk about?"
+                  rows={6}
+                />
+              </div>
+
+              <Button
+                type="submit"
+                disabled={isSubmitting}
+                className="min-h-[44px] px-6 font-mono text-sm tracking-tight"
+              >
+                {isSubmitting ? (
+                  <>
+                    <div className="mr-2 h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
+                    Sending...
+                  </>
+                ) : isSubmitted ? (
+                  <>
+                    <Check className="mr-2 h-4 w-4" />
+                    Sent
+                  </>
+                ) : (
+                  <>
+                    <Send className="mr-2 h-4 w-4" />
+                    Send message
+                  </>
+                )}
               </Button>
-              <Button asChild variant="outline" size="lg" className="min-h-[48px] px-8">
-                <a href={personalData.linkedin} target="_blank" rel="noopener noreferrer">
-                  LinkedIn Profile
-                </a>
-              </Button>
-            </div>
+            </form>
           </div>
         </FadeInUp>
-      </div>
+      </section>
     </main>
   );
 }

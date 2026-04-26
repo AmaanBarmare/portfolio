@@ -11,11 +11,8 @@ import { cn } from "@/lib/utils";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
   { name: "Experience", href: "/experience" },
   { name: "Projects", href: "/projects" },
-  { name: "Skills", href: "/skills" },
-  { name: "Education", href: "/education" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -123,9 +120,15 @@ export function Navbar() {
                   </nav>
 
                   <div className="mt-6 pt-6 border-t">
-                    <Link href="/resume" onClick={() => setIsOpen(false)} className="block w-full">
+                    <a
+                      href="/AmaanBarmareResume.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setIsOpen(false)}
+                      className="block w-full"
+                    >
                       <Button className="w-full min-h-[44px]">View Resume</Button>
-                    </Link>
+                    </a>
                   </div>
                 </SheetContent>
               </Sheet>

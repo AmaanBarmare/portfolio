@@ -1,191 +1,59 @@
 [
   {
-    "id": "mu-sigma-intern",
-    "title": "Data Scientist Intern",
-    "company": "Mu Sigma Inc.",
-    "location": "Austin, Texas, United States",
+    "id": "oltaflock",
+    "company": "Oltaflock AI",
+    "role": "Founding Engineer",
+    "timeframe": "Jan 2026 – Present",
+    "location": "Remote",
+    "logo": null,
+    "bullets": [
+      "Built Estora Guard, a real-estate transaction platform with LlamaParse contract ingestion (AOS, HOA, closing docs), automated risk extraction with confidence scoring, and a role-aware AI agent governed by NemoClaw — manifest-driven policy engine, human approval gates on PII, and a red-team console that runs eight adversarial attacks against the policy layer.",
+      "Built EchoBrief, a meeting-intelligence SaaS with two recording paths feeding the same pipeline: a Recall calendar bot and a Chrome MV3 extension that survives service-worker restarts via offscreen-document capture. Sarvam STT with Whisper fallback, GPT-4o-mini for structured insights, and 18+ Supabase Edge Functions for async processing and Slack/email/digest delivery.",
+      "Shipped GodownAI for warehouse-rental invoicing — Indian GST auto-detection (CGST/SGST vs IGST inferred from GSTIN), client-side PDF generation via jsPDF, Resend email delivery, and time-locked payment reminders. Reworked from a v1 GPT-parsing prototype to a deterministic contract-driven generator after the parsing approach proved operationally backwards.",
+      "Deployed a SCADA monitoring system for CeeDee Vacuum — Python + pymodbus polling Modbus TCP from PLCs, anomaly detection on real-time sensor streams, and a Next.js dashboard surfacing alerts to the floor.",
+      "Built marketing automation for D2C brands and SMB clients in India — lead generation, AEO/GEO/AI-SEO optimization, and AI-assisted creative pipelines using Higgsfield for video generation with attribution tracking."
+    ],
+    "stack": ["Next.js", "TypeScript", "PostgreSQL", "Supabase", "Anthropic Claude", "OpenAI", "LlamaParse", "NemoClaw", "Python", "pymodbus", "Resend", "Higgsfield"]
+  },
+  {
+    "id": "mu-sigma-2025",
+    "company": "Mu Sigma",
+    "role": "Data Scientist Intern",
     "timeframe": "Jul 2025 – Nov 2025",
-    "status": "completed",
+    "location": "Austin, TX",
     "logo": "/musigmalogo.jpeg",
-    "type": "internship",
-    "stack": [
-      "Grafana",
-      "PostgreSQL",
-      "Python (pandas)",
-      "ETL Pipelines",
-      "Time-Series Analytics",
-      "KPI Modeling",
-      "Alerting Logic",
-      "Data Visualization"
+    "bullets": [
+      "Designed and shipped a real-time Grafana dashboard for a Fortune 500 consumer-goods client, surfacing yield percentage, inventory turnover, and on-time fill rate to factory operations teams.",
+      "Wrote PostgreSQL logic across 15+ tables in pgAdmin — 2–3 table joins per KPI to derive correct values for yield, turnover, and fill — and connected it to Grafana, replacing a low-fidelity legacy dashboard.",
+      "Built a proof-of-concept extraction framework for unstructured PDFs and scanned documents with PII masking, encryption, and audit logging; prototyped a 5-tier supply-chain analytics pipeline using PyTorch and LightGBM.",
+      "Owned end-to-end delivery from Figma design to production Grafana, coordinating a 2-person cross-timezone team in India through daily async handoffs."
     ],
-    "shortDescription": "Designed and deployed real-time Grafana dashboards and robust data models for manufacturing operational metrics.",
-    "quickRead": [
-      "Collaborated with cross-functional stakeholders to translate manufacturing business requirements into technical data models and KPI frameworks",
-      "Designed and deployed real-time Grafana dashboards powered by PostgreSQL transformations",
-      "Developed structured SQL logic to convert raw factory event data into anomaly signals and rule-based alerts",
-      "Led a remote team of three engineers, managing data logic, implementation tasks, and validation cycles"
-    ],
-    "fullStory": {
-      "problem": "Manufacturing clients needed to translate core business requirements into an actionable KPI framework, requiring comprehensive visibility into operational metrics such as inventory, stockouts, yield, and machine-level performance.",
-      "actions": [
-        "Collaborated with cross-functional stakeholders to translate manufacturing business requirements into technical data models and KPI frameworks for operational decision-making",
-        "Designed and deployed real-time Grafana dashboards powered by PostgreSQL transformations, delivering visibility into key operational metrics",
-        "Developed structured SQL logic to convert raw factory event data into anomaly signals, rule-based alerts, and executive-ready performance indicators",
-        "Led a remote team of three engineers, defining data logic, delegating implementation tasks, and coordinating validation cycles to accelerate delivery timelines"
-      ],
-      "impact": [
-        "Delivered critical visibility into inventory, stockouts, yield, and machine-level performance metrics, empowering data-driven operational decisions",
-        "Successfully converted raw factory events into actionable executive-ready performance indicators and alert signals",
-        "Accelerated delivery timelines by effectively leading and coordinating a remote engineering team"
-      ],
-      "learnings": "Gained substantial experience in translating complex manufacturing business requirements into technical models, acquired deep expertise in Grafana and PostgreSQL for real-time dashboarding, and developed strong leadership skills by coordinating a remote engineering team."
-    }
+    "stack": ["Grafana", "PostgreSQL", "pgAdmin", "Python", "PyTorch", "LightGBM", "Figma"]
   },
   {
     "id": "augle-ai-2024",
-    "title": "Software Engineer Intern",
     "company": "Augle AI",
-    "location": "Remote",
+    "role": "Software Engineer Intern",
     "timeframe": "Jun 2024 – Aug 2024",
+    "location": "Remote",
     "logo": "/augle_ai_logo.jpeg",
-    "type": "internship",
-    "stack": [
-      "Python",
-      "Scrapy",
-      "Selenium",
-      "MongoDB",
-      "Web Scraping"
+    "bullets": [
+      "Built a Scrapy + Selenium pipeline that extracted 1,000+ structured product specifications from industrial supplier sites, improving downstream retrieval efficiency by 40%.",
+      "Designed MongoDB schemas and access layers for the scraped data, cutting average AI-chatbot query time by 35%."
     ],
-    "shortDescription": "Engineered scalable web scraping pipelines and MongoDB storage solutions for industrial product data extraction.",
-    "quickRead": [
-      "Engineered scalable web scraping pipeline extracting 1,000+ product details from industrial websites",
-      "Designed MongoDB-based storage solution for structured product data integration with AI chatbot systems",
-      "Optimized scraping performance with dynamic spider settings and smart request delays"
-    ],
-    "fullStory": {
-      "problem": "The company needed to efficiently extract product details and technical specifications from industrial websites to feed downstream AI chatbot systems with accurate, structured data.",
-      "actions": [
-        "Engineered a scalable web scraping pipeline using Python, Scrapy, and Selenium to extract over 1,000 product details and technical specs from two industrial websites",
-        "Designed a MongoDB-based storage solution for structured product data, enabling smooth integration with downstream AI chatbot systems",
-        "Optimized scraping performance with dynamic spider settings like auto-throttling and smart request delays to handle deeply nested site categories with accuracy and speed"
-      ],
-      "impact": [
-        "Boosted data retrieval efficiency by 40% through optimized scraping pipeline",
-        "Successfully extracted comprehensive product data from complex industrial websites",
-        "Established scalable data storage architecture for AI system integration"
-      ],
-      "learnings": "Gained expertise in web scraping technologies, learned to design scalable data pipelines, and developed skills in optimizing performance for complex website structures."
-    }
+    "stack": ["Python", "Scrapy", "Selenium", "MongoDB"]
   },
   {
     "id": "augle-ai-2023",
-    "title": "Software Engineer Intern",
     "company": "Augle AI",
-    "location": "Remote",
+    "role": "Software Engineer Intern",
     "timeframe": "May 2023 – Aug 2023",
+    "location": "Remote",
     "logo": "/augle_ai_logo.jpeg",
-    "type": "internship",
-    "stack": [
-      "Python",
-      "Flask",
-      "OpenCV",
-      "SMTP",
-      "RTCP",
-      "MongoDB",
-      "PyTorch"
+    "bullets": [
+      "Optimized a machine-vision inspection workflow for screw-defect detection using OpenCV and PyTorch — increased throughput by 30% and reduced false-negative rate by 15%.",
+      "Implemented Flask-based SMTP/RTCP notification services for real-time QC alerts, reducing average response time from 4+ minutes to under 10 seconds."
     ],
-    "shortDescription": "Developed comprehensive inspection and output system for data processing and real-time insights generation.",
-    "quickRead": [
-      "Implemented inspector modules to analyze defects in screws for image, video, and point cloud data using Python and related libraries",
-      "Developed output modules for email notifications and RTCP integration with external APIs",
-      "Collaborated with development team to ensure seamless module integration and system reliability"
-    ],
-    "fullStory": {
-      "problem": "Augle AI needed a comprehensive inspection and output system to enhance data processing capabilities and generate actionable insights for users through intelligent analysis of various data types.",
-      "actions": [
-        "Implemented inspector modules to analyze defects in screws for image, video, and point cloud data using Python and related libraries",
-        "Developed output modules for email notifications and real-time control protocol (RTCP) integration, incorporating external APIs and libraries",
-        "Collaborated with a development team of three to ensure seamless module integration",
-        "Conducted debugging, code optimization, and rigorous testing for system reliability"
-      ],
-      "impact": [
-        "Successfully deployed inspector modules to analyze defects in screws and process various data types",
-        "Integrated email functionality for notifications and reporting",
-        "Developed an RTCP module for real-time video streaming",
-        "The FullApp system made work for users 30% more efficient through intelligent insights and actionable outputs"
-      ],
-      "learnings": "Gained experience in computer vision technologies, learned to integrate multiple data processing modules, and developed skills in real-time communication protocols and system optimization."
-    }
-  },
-  {
-    "id": "psu-math-grader",
-    "title": "Mathematics Grader",
-    "company": "Penn State University",
-    "location": "University Park, PA",
-    "timeframe": "2024",
-    "logo": "/pennstatelogo.jpeg",
-    "type": "academic",
-    "stack": [
-      "Mathematical Analysis",
-      "Communication",
-      "Time Management"
-    ],
-    "shortDescription": "Graded assignments and provided feedback for undergraduate mathematics courses.",
-    "quickRead": [
-      "Graded 200+ assignments weekly with detailed feedback",
-      "Maintained 98% accuracy in grading consistency reviews",
-      "Helped students improve problem-solving through targeted feedback"
-    ],
-    "fullStory": {
-      "problem": "The mathematics department needed reliable graders who could provide consistent, helpful feedback to help students improve their problem-solving skills and understanding of complex concepts.",
-      "actions": [
-        "Graded over 200 assignments weekly for calculus and linear algebra courses, ensuring consistent application of rubrics",
-        "Provided detailed written feedback highlighting common mistakes and suggesting improvement strategies",
-        "Collaborated with professors to align grading standards and identify students needing additional support",
-        "Developed efficient grading workflows to meet tight deadlines while maintaining quality"
-      ],
-      "impact": [
-        "Maintained 98% accuracy rate in grading consistency reviews",
-        "Helped improve student performance through targeted feedback",
-        "Reduced professor grading workload by 60 hours per semester",
-        "Identified and reported common conceptual gaps to improve course instruction"
-      ],
-      "learnings": "Developed strong attention to detail, improved communication skills for providing constructive feedback, and learned to manage time effectively under consistent deadlines."
-    }
-  },
-  {
-    "id": "psu-learning-assistant",
-    "title": "Learning Assistant",
-    "company": "Penn State University",
-    "location": "University Park, PA",
-    "timeframe": "Aug 2023 – Dec 2023",
-    "logo": "/pennstatelogo.jpeg",
-    "type": "academic",
-    "stack": [
-      "Teaching",
-      "Communication",
-      "Calculus",
-      "Problem-Solving"
-    ],
-    "shortDescription": "Supported MATH 141 - Calculus 2 students through weekly sessions and individual problem-solving assistance.",
-    "quickRead": [
-      "Hosted weekly LA sessions twice a week for MATH 141 - Calculus 2",
-      "Addressed individual student problems to enhance problem-solving skills",
-      "Facilitated interactive worksheet sessions with professor once a week"
-    ],
-    "fullStory": {
-      "problem": "Students in MATH 141 - Calculus 2 needed additional support beyond regular lectures to reinforce core concepts, troubleshoot challenges, and develop deeper understanding of calculus principles.",
-      "actions": [
-        "Hosted weekly LA sessions twice a week to reinforce core concepts, troubleshoot challenges, and provide real-world applications of calculus principles",
-        "Addressed individual student problems to enhance their problem-solving skills and promote a deeper understanding of course materials",
-        "Facilitated interactive worksheet sessions with the professor once a week to reinforce key concepts, enhance problem-solving skills, and foster a dynamic and participatory learning environment"
-      ],
-      "impact": [
-        "Provided consistent weekly support for Calculus 2 students throughout the semester",
-        "Enhanced student problem-solving abilities through targeted individual assistance",
-        "Created an interactive learning environment that complemented classroom instruction"
-      ],
-      "learnings": "Developed exceptional communication and interpersonal skills, learned to break down complex mathematical concepts into digestible components, and gained experience in adapting to various learning styles while collaborating effectively with educators."
-    }
+    "stack": ["Python", "Flask", "OpenCV", "PyTorch", "SMTP", "RTCP"]
   }
 ]
