@@ -4,7 +4,7 @@ import { FadeInUp } from '@/components/animations/fade-in-up';
 import projectsData from '@/data/projects.json';
 
 export const metadata: Metadata = {
-  title: 'Projects — Amaan Barmare',
+  title: 'Projects · Amaan Barmare',
   description: 'Selected work across AI, full-stack, and systems.',
 };
 
@@ -28,7 +28,7 @@ export default function ProjectsPage() {
       <section className="container relative z-10 mx-auto max-w-6xl px-4 py-20 md:py-24">
         <FadeInUp>
           <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            03 — Projects
+            03 · Projects
           </p>
           <h1 className="mb-4 text-[clamp(2rem,4.5vw,3.25rem)] font-bold leading-tight tracking-tight">
             <span className="bg-gradient-to-r from-primary via-indigo-400 to-teal-400 bg-clip-text text-transparent">
@@ -36,7 +36,7 @@ export default function ProjectsPage() {
             </span>
           </h1>
           <p className="mb-16 max-w-xl text-base text-muted-foreground md:text-lg">
-            Things I&apos;ve built — for Oltaflock, for clients, for hackathons, and for myself.
+            Things I&apos;ve built for Oltaflock, clients, hackathons, and myself.
           </p>
         </FadeInUp>
 

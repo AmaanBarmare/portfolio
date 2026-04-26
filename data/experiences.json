@@ -7,11 +7,11 @@
     "location": "Remote",
     "logo": null,
     "bullets": [
-      "Built Estora Guard, a real-estate transaction platform with LlamaParse contract ingestion (AOS, HOA, closing docs), automated risk extraction with confidence scoring, and a role-aware AI agent governed by NemoClaw — manifest-driven policy engine, human approval gates on PII, and a red-team console that runs eight adversarial attacks against the policy layer.",
+      "Built Estora Guard, a real-estate transaction platform with LlamaParse contract ingestion (AOS, HOA, closing docs), automated risk extraction with confidence scoring, and a role-aware AI agent governed by NemoClaw, with a manifest-driven policy engine, human approval gates on PII, and a red-team console that runs eight adversarial attacks against the policy layer.",
       "Built EchoBrief, a meeting-intelligence SaaS with two recording paths feeding the same pipeline: a Recall calendar bot and a Chrome MV3 extension that survives service-worker restarts via offscreen-document capture. Sarvam STT with Whisper fallback, GPT-4o-mini for structured insights, and 18+ Supabase Edge Functions for async processing and Slack/email/digest delivery.",
-      "Shipped GodownAI for warehouse-rental invoicing — Indian GST auto-detection (CGST/SGST vs IGST inferred from GSTIN), client-side PDF generation via jsPDF, Resend email delivery, and time-locked payment reminders. Reworked from a v1 GPT-parsing prototype to a deterministic contract-driven generator after the parsing approach proved operationally backwards.",
-      "Deployed a SCADA monitoring system for CeeDee Vacuum — Python + pymodbus polling Modbus TCP from PLCs, anomaly detection on real-time sensor streams, and a Next.js dashboard surfacing alerts to the floor.",
-      "Built marketing automation for D2C brands and SMB clients in India — lead generation, AEO/GEO/AI-SEO optimization, and AI-assisted creative pipelines using Higgsfield for video generation with attribution tracking."
+      "Shipped GodownAI for warehouse-rental invoicing: Indian GST auto-detection (CGST/SGST vs IGST inferred from GSTIN), client-side PDF generation via jsPDF, Resend email delivery, and time-locked payment reminders. Reworked from a v1 GPT-parsing prototype to a deterministic contract-driven generator after the parsing approach proved operationally backwards.",
+      "Deployed a SCADA monitoring system for CeeDee Vacuum using Python and pymodbus to poll Modbus TCP from PLCs, with anomaly detection on real-time sensor streams and a Next.js dashboard surfacing alerts to the floor.",
+      "Built marketing automation for D2C brands and SMB clients in India: lead generation, AEO/GEO/AI-SEO optimization, and AI-assisted creative pipelines using Higgsfield for video generation with attribution tracking."
     ],
     "stack": ["Next.js", "TypeScript", "PostgreSQL", "Supabase", "Anthropic Claude", "OpenAI", "LlamaParse", "NemoClaw", "Python", "pymodbus", "Resend", "Higgsfield"]
   },
@@ -24,7 +24,7 @@
     "logo": "/musigmalogo.jpeg",
     "bullets": [
       "Designed and shipped a real-time Grafana dashboard for a Fortune 500 consumer-goods client, surfacing yield percentage, inventory turnover, and on-time fill rate to factory operations teams.",
-      "Wrote PostgreSQL logic across 15+ tables in pgAdmin — 2–3 table joins per KPI to derive correct values for yield, turnover, and fill — and connected it to Grafana, replacing a low-fidelity legacy dashboard.",
+      "Wrote PostgreSQL logic across 15+ tables in pgAdmin, with 2–3 table joins per KPI to derive correct values for yield, turnover, and fill, then connected it to Grafana, replacing a low-fidelity legacy dashboard.",
       "Built a proof-of-concept extraction framework for unstructured PDFs and scanned documents with PII masking, encryption, and audit logging; prototyped a 5-tier supply-chain analytics pipeline using PyTorch and LightGBM.",
       "Owned end-to-end delivery from Figma design to production Grafana, coordinating a 2-person cross-timezone team in India through daily async handoffs."
     ],
@@ -51,7 +51,7 @@
     "location": "Remote",
     "logo": "/augle_ai_logo.jpeg",
     "bullets": [
-      "Optimized a machine-vision inspection workflow for screw-defect detection using OpenCV and PyTorch — increased throughput by 30% and reduced false-negative rate by 15%.",
+      "Optimized a machine-vision inspection workflow for screw-defect detection using OpenCV and PyTorch, increasing throughput by 30% and reducing false-negative rate by 15%.",
       "Implemented Flask-based SMTP/RTCP notification services for real-time QC alerts, reducing average response time from 4+ minutes to under 10 seconds."
     ],
     "stack": ["Python", "Flask", "OpenCV", "PyTorch", "SMTP", "RTCP"]

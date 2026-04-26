@@ -91,7 +91,7 @@ export default function ContactPage() {
       <section className="container relative z-10 mx-auto max-w-4xl px-4 py-20 md:py-24">
         <FadeInUp>
           <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            04 — Contact
+            04 · Contact
           </p>
           <h1 className="mb-4 text-[clamp(2rem,4.5vw,3.25rem)] font-bold leading-tight tracking-tight">
             <span className="bg-gradient-to-r from-primary via-indigo-400 to-teal-400 bg-clip-text text-transparent">

@@ -5,7 +5,7 @@ import { FadeInUp } from '@/components/animations/fade-in-up';
 import experiencesData from '@/data/experiences.json';
 
 export const metadata: Metadata = {
-  title: 'Experience — Amaan Barmare',
+  title: 'Experience · Amaan Barmare',
   description: 'Roles, internships, and the work behind them.',
 };
 
@@ -18,7 +18,7 @@ export default function ExperiencePage() {
       <section className="container relative z-10 mx-auto max-w-4xl px-4 py-20 md:py-24">
         <FadeInUp>
           <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            02 — Experience
+            02 · Experience
           </p>
           <h1 className="mb-16 text-[clamp(2rem,4.5vw,3.25rem)] font-bold leading-tight tracking-tight">
             <span className="bg-gradient-to-r from-primary via-indigo-400 to-teal-400 bg-clip-text text-transparent">

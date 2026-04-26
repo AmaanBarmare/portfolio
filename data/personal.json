@@ -3,10 +3,10 @@
   "role": "Founding Engineer",
   "tagline": "I build full-stack AI products end-to-end.",
   "bio": [
-    "I'm a Founding Engineer at Oltaflock, where I ship production AI systems across very different surfaces — real-estate transaction intelligence, meeting-intelligence SaaS, warehouse invoicing, and SCADA monitoring on a factory floor.",
-    "Before Oltaflock I interned at Mu Sigma as a Data Scientist (Grafana dashboards and supply-chain analytics for a Fortune 500 client) and twice at Augle AI as a Software Engineer — computer-vision QC pipelines and structured scraping for downstream AI.",
+    "I'm a Founding Engineer at Oltaflock, where I ship production AI systems across very different surfaces: real-estate transaction intelligence, meeting-intelligence SaaS, warehouse invoicing, and SCADA monitoring on a factory floor.",
+    "Before Oltaflock I interned at Mu Sigma as a Data Scientist (Grafana dashboards and supply-chain analytics for a Fortune 500 client) and twice at Augle AI as a Software Engineer, working on computer-vision QC pipelines and structured scraping for downstream AI.",
     "I graduated from Penn State in May 2025 with a BS in Computer Science and a minor in Economics (Dean's List).",
-    "I like systems that survive contact with reality — agents with policy gates, webhooks that don't double-fire, transcripts that recover when the service worker dies. If something looks too clean, it's probably hiding a race condition."
+    "I like systems that survive contact with reality: agents with policy gates, webhooks that don't double-fire, transcripts that recover when the service worker dies. If something looks too clean, it's probably hiding a race condition."
   ],
   "email": "amaan.barmare03@gmail.com",
   "phone": "609-582-5588",

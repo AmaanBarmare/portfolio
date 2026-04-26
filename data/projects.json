@@ -2,7 +2,7 @@
   {
     "id": "estora-guard",
     "title": "Estora Guard",
-    "blurb": "Real-estate transaction platform with a role-aware AI agent secured by NemoClaw — LlamaParse contract ingestion, deal health scoring, manifest-driven policy gates with human approval on PII, and a red-team attack console that runs eight adversarial cases against the policy layer.",
+    "blurb": "Real-estate transaction platform with a role-aware AI agent secured by NemoClaw. LlamaParse contract ingestion, deal health scoring, manifest-driven policy gates with human approval on PII, and a red-team attack console that runs eight adversarial cases against the policy layer.",
     "stack": ["Next.js", "TypeScript", "Supabase", "Anthropic Claude", "LlamaParse", "NemoClaw"],
     "links": { "live": "https://estora-guard.vercel.app", "repo": "https://github.com/AmaanBarmare/estora-guard" },
     "org": "Oltaflock"
@@ -10,7 +10,7 @@
   {
     "id": "echobrief",
     "title": "EchoBrief",
-    "blurb": "Meeting-intelligence SaaS with two recording paths feeding one pipeline — a Recall calendar bot and a Chrome MV3 extension that persists state to chrome.storage.local so recordings survive service-worker restarts. Sarvam STT with Whisper fallback, GPT-4o-mini for structured insights, multi-channel delivery (Slack, email, digest reports).",
+    "blurb": "Meeting-intelligence SaaS with two recording paths feeding one pipeline: a Recall calendar bot and a Chrome MV3 extension that persists state to chrome.storage.local so recordings survive service-worker restarts. Sarvam STT with Whisper fallback, GPT-4o-mini for structured insights, multi-channel delivery (Slack, email, digest reports).",
     "stack": ["React", "TypeScript", "Supabase", "Chrome MV3", "Sarvam AI", "OpenAI", "Recall AI"],
     "links": { "live": "https://echobrief.in", "repo": "https://github.com/Oltaflock-AI/echobrief" },
     "org": "Oltaflock"
@@ -26,7 +26,7 @@
   {
     "id": "nexuscommerce",
     "title": "NexusCommerce",
-    "blurb": "AI-native e-commerce admin platform — natural-language → validated SQL over a whitelisted table set, RAG email generation with pgvector, idempotent Razorpay webhooks (HMAC verified), and a React Flow visual workflow builder. Powers Alyra in production.",
+    "blurb": "AI-native e-commerce admin platform. Natural-language → validated SQL over a whitelisted table set, RAG email generation with pgvector, idempotent Razorpay webhooks (HMAC verified), and a React Flow visual workflow builder. Powers Alyra in production.",
     "stack": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "OpenAI", "React Flow", "Razorpay"],
     "links": { "repo": "https://github.com/AmaanBarmare/Nexus-Commerce" }
   },
@@ -40,7 +40,7 @@
   {
     "id": "alyra",
     "title": "Alyra",
-    "blurb": "Headless Shopify storefront for an early-stage solid-perfumes brand in India. Custom Razorpay checkout, webhook-driven order automation, GA4 + Meta Pixel attribution. Generated $10k+ in revenue in the first six months — and runs on the NexusCommerce backend.",
+    "blurb": "Headless Shopify storefront for an early-stage solid-perfumes brand in India. Custom Razorpay checkout, webhook-driven order automation, GA4 + Meta Pixel attribution. Generated $10k+ in revenue in the first six months, and runs on the NexusCommerce backend.",
     "stack": ["React", "TypeScript", "Shopify Storefront API", "Razorpay", "Vercel Functions", "GA4"],
     "links": { "live": "https://alyra.in" }
   },
@@ -54,14 +54,14 @@
   {
     "id": "resolvr",
     "title": "Resolvr",
-    "blurb": "Multi-agent conflict arbitration — when two AIs disagree on a recommendation, who decides? Five-stage SSE pipeline (forensics → grounding → simulation → brief), Veris-sandboxed agents, Baseten-served Claude Sonnet 4.5, and You.com for live market grounding. Built for Enterprise Agent Jam NYC 2026.",
+    "blurb": "Multi-agent conflict arbitration: when two AIs disagree on a recommendation, who decides? Five-stage SSE pipeline (forensics → grounding → simulation → brief), Veris-sandboxed agents, Baseten-served Claude Sonnet 4.5, and You.com for live market grounding. Built for Enterprise Agent Jam NYC 2026.",
     "stack": ["Next.js", "FastAPI", "Python", "Veris AI", "Baseten", "Claude Sonnet 4.5", "You.com"],
     "links": { "repo": "https://github.com/AmaanBarmare/resolvr" }
   },
   {
     "id": "ar-navigation",
     "title": "Outdoor AR Navigation",
-    "blurb": "AR navigation app overlaying directions on the real world while detecting obstacles and points of interest in real time. ARCore + Unity for AR tracking, YOLOv3 for obstacle detection, Azure Maps for routing — 30+ FPS on mid-range Android.",
+    "blurb": "AR navigation app overlaying directions on the real world while detecting obstacles and points of interest in real time. ARCore + Unity for AR tracking, YOLOv3 for obstacle detection, Azure Maps for routing, hitting 30+ FPS on mid-range Android.",
     "stack": ["Unity", "C#", "ARCore", "YOLOv3", "Azure Maps", "Android"],
     "links": { "live": "https://www.youtube.com/watch?v=dENTbLwHhQE" }
   }

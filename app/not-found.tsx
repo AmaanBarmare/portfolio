@@ -12,7 +12,7 @@ export default function NotFound() {
       <div className="relative z-10 mx-auto max-w-md text-center">
         <FadeInUp>
           <p className="mb-2 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            404 — Not Found
+            404 · Not Found
           </p>
           <h1 className="mb-6 text-4xl font-bold tracking-tight md:text-5xl">
             <span className="bg-gradient-to-r from-primary via-indigo-400 to-teal-400 bg-clip-text text-transparent">
@@ -20,7 +20,7 @@ export default function NotFound() {
             </span>
           </h1>
           <p className="mb-8 text-muted-foreground">
-            That page doesn&apos;t exist — or it used to and got cleaned up.
+            That page doesn&apos;t exist, or it used to and got cleaned up.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
             <Button asChild size="lg" className="min-h-[44px] px-6 font-mono text-sm tracking-tight">
