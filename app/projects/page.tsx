@@ -11,10 +11,12 @@ export const metadata: Metadata = {
 type Project = {
   id: string;
   title: string;
+  tagline?: string;
   blurb: string;
   stack: string[];
   links: { live?: string; repo?: string };
   org?: string;
+  comingSoon?: boolean;
 };
 
 export default function ProjectsPage() {
@@ -68,13 +70,19 @@ function ProjectCard({ project }: { project: Project }) {
 
       <div className="pointer-events-none relative z-[1] flex flex-1 flex-col">
         <div className="mb-4 flex items-start justify-between gap-3">
-          {project.org ? (
-            <span className="inline-flex items-center rounded-md border border-primary/30 bg-primary/10 px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-primary">
-              {project.org}
-            </span>
-          ) : (
-            <span />
-          )}
+          <div className="flex flex-wrap items-center gap-1.5">
+            {project.org && (
+              <span className="inline-flex items-center rounded-md border border-primary/30 bg-primary/10 px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-primary">
+                {project.org}
+              </span>
+            )}
+            {project.comingSoon && (
+              <span className="inline-flex items-center gap-1 rounded-md border border-amber-500/40 bg-amber-500/10 px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-amber-500">
+                <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-amber-500" />
+                Coming soon
+              </span>
+            )}
+          </div>
           {project.links.repo && (
             <a
               href={project.links.repo}
@@ -88,12 +96,18 @@ function ProjectCard({ project }: { project: Project }) {
           )}
         </div>
 
-        <h2 className="mb-3 flex items-center gap-1.5 text-lg font-semibold tracking-tight">
+        <h2 className="mb-2 flex items-center gap-1.5 text-lg font-semibold tracking-tight">
           <span className="bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent transition-colors group-hover:from-primary group-hover:to-indigo-400">
             {project.title}
           </span>
           <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary" />
         </h2>
+
+        {project.tagline && (
+          <p className="mb-3 text-[15px] font-medium leading-snug text-foreground/90">
+            {project.tagline}
+          </p>
+        )}
 
         <p className="mb-5 flex-1 text-sm leading-relaxed text-muted-foreground">
           {project.blurb}

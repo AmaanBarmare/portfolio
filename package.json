@@ -50,9 +50,9 @@
     "framer-motion": "^12.23.12",
     "input-otp": "^1.2.4",
     "lucide-react": "^0.446.0",
-    "next": "15.5.12",
+    "next": "15.5.19",
     "next-themes": "^0.4.6",
-    "postcss": "^8.5.6",
+    "postcss": "^8.5.15",
     "react": "^19.1.2",
     "react-day-picker": "^9.8.1",
     "react-dom": "^19.1.2",
@@ -70,6 +70,9 @@
   },
   "devDependencies": {
     "eslint": "^8.57.0",
-    "eslint-config-next": "15.5.12"
+    "eslint-config-next": "15.5.19"
+  },
+  "overrides": {
+    "postcss": "$postcss"
   }
 }
